@@ -1,5 +1,4 @@
 import {
-  Box,
   Container,
   createTheme,
   CssBaseline,
@@ -57,9 +56,6 @@ export default function App() {
     palette: {
       mode: paletteType,
       background: {
-        // default: paletteType === 'light' ? '#FFFFFF' : '#1B1B1D',
-        // default: paletteType === 'light' ? '#eaeaea' : '#121212',#1e1e1e
-        // default: paletteType === 'light' ? '#eaeaea' : '#1e1e1e',
         default: paletteType === 'light' ? '#FFFFFF' : '#1e1e1e',
       },
     },
@@ -67,6 +63,13 @@ export default function App() {
       MuiCssBaseline: {
         styleOverrides: {
           body: paletteType === 'dark' ? darkScrollbar() : null,
+        },
+      },
+      MuiDivider: {
+        styleOverrides: {
+          root: {
+            borderColor: 'rgba(255, 255, 255, 0.12)',
+          },
         },
       },
     },

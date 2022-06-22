@@ -1,5 +1,4 @@
-import { Box, Button, Grid, Paper, Stack, Typography } from '@mui/material';
-import React from 'react';
+import { Box, Grid, Paper, Stack, Typography } from '@mui/material';
 import {
   VscRemote,
   VscError,
@@ -7,7 +6,6 @@ import {
   VscBell,
   VscFeedback,
 } from 'react-icons/vsc';
-import { GoGitBranch } from 'react-icons/go';
 import { IoIosGitBranch } from 'react-icons/io';
 
 export default function Footer() {
