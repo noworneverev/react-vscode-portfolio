@@ -17,6 +17,7 @@ import AppButtons from './AppButtons';
 import MDContainer from '../components/MDContainer';
 import Home from '../pages/Home';
 import { pages } from '../pages/pages';
+import usePageTracking from '../hooks/usePageTracking';
 
 interface Page {
   index: number;
@@ -51,7 +52,7 @@ export default function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [visiblePages, setVisiblePages] = useState(pages);
   const paletteType = darkMode ? 'dark' : 'light';
-
+  usePageTracking();
   const theme = createTheme({
     palette: {
       mode: paletteType,
