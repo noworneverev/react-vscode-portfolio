@@ -99,7 +99,6 @@ export default function App() {
       if (page) newPages.push(page);
     }
     setVisiblePages(newPages);
-    // setVisiblePages(pages.filter((x) => visiblePageIndexs.includes(x.index)));
 
     if (visiblePageIndexs.length === 0) {
       setSelectedIndex(-1);
@@ -128,13 +127,6 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      {/* <AppDrawer
-        setExpanded={setExpanded}
-        expanded={expanded}
-        darkMode={darkMode}
-        handleThemeChange={handleThemeChange}
-      /> */}
-      {/* <Router> */}
       <CssBaseline enableColorScheme />
       <Container
         sx={{ m: 0, p: 0, overflowY: 'hidden' }}
@@ -231,21 +223,4 @@ export default function App() {
       {/* </Router> */}
     </ThemeProvider>
   );
-}
-
-// sx={{ backgroundColor: 'red' }}
-
-{
-  /* <Grid item lg={expanded ? 10 : 11.6}>
-<Box sx={{ ml: 6, height: '100vh', mt: 1 }} display="flex">
-<Box sx={{ mt: 1 }} display="flex">
-  <Typography>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Molestias nihil saepe adipisci consequuntur quis vero, modi
-    vel iure suscipit voluptas, qui, quas facere nulla aspernatur
-    libero provident quasi recusandae repudiandae?
-  </Typography>
-</Box>
-</Box>
-</Grid> */
 }
