@@ -43,7 +43,9 @@ export default function Home({ setSelectedIndex }: Props) {
     >
       <Grid item xs={3}>
         <Stack direction={{ xs: 'column', sm: 'row-reverse' }} spacing={2}>
-          <img src={logo} width="100px" />
+          <Box display="flex" sx={{ justifyContent: 'center' }}>
+            <img src={logo} width="100px" />
+          </Box>
           <Box>
             <Typography variant="h3">Yan-Ying Liao</Typography>
             <Typography variant="subtitle1" gutterBottom>
