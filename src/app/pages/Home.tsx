@@ -58,14 +58,15 @@ export default function Home({ setSelectedIndex }: Props) {
               justifyContent={{ xs: 'center', sm: 'flex-start' }}
             >
               <Typography variant="subtitle1" gutterBottom>
-                Better an{' '}
+                Always difficult, always beautiful
+                {/* Better an{' '}
                 <Box fontWeight="fontWeightMedium" display="inline">
                   oops
                 </Box>{' '}
                 than a{' '}
                 <Box fontWeight="fontWeightMedium" display="inline">
                   what if
-                </Box>
+                </Box> */}
               </Typography>
             </Grid>
             <Grid
