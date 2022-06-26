@@ -1,46 +1,184 @@
-# Getting Started with Create React App
+<div id="top"></div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT SHIELDS -->
+[![gh-pages-shield]][gh-pages-url]
+[![website-shield]][website-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/noworneverev/react-vscode-portfolio">
+    <img src="./src/static/favicon.png" alt="Logo" width="80" >
+  </a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<h3 align="center">react-vscode-portfolio</h3>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+  <p align="center">
+    A vscode inspired portfolio project
+    <br />
+    <a href="https://github.com/noworneverev/react-vscode-portfolio"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://noworneverev.github.io/">View Demo</a>
+    ·
+    <a href="https://github.com/noworneverev/react-vscode-portfolio/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/noworneverev/react-vscode-portfolio/issues">Request Feature</a>
+  </p>
+</div>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#features">Features</a></li>        
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-### `npm run eject`
+[![Product Name Screen Shot][product-screenshot]](https://noworneverev.github.io/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The project is inspired by [Visual Studio Code](https://github.com/microsoft/vscode) and [caglarturali.github.io](https://github.com/caglarturali/caglarturali.github.io). The pages of the portfolio is powered by `markdown`, which make it easy to modify or add your own contents.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Built With
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+* [React.js](https://reactjs.org/)
+* [Material UI](https://github.com/mui/material-ui)
+* [react-markdown](https://github.com/remarkjs/react-markdown)
 
-## Learn More
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- GETTING STARTED -->
+## Getting Started
+
+### Prerequisites
+
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/noworneverev/react-vscode-portfolio.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Enter your name in `.env.development`
+   ```js
+   REACT_APP_NAME=<your_name>
+   ```
+4. Add your markdown pages in `public/pages`
+5. Add your routes in `src/app/pages/page.ts`, make sure the names of pages are consistent with markdown files.
+  ```ts
+   export const pages = [
+    { index: 0, name: 'overview.md', route: '/overview' },
+    { index: 1, name: 'skills.md', route: '/skills' },
+    { index: 2, name: 'experience.md', route: '/experience' },
+    { index: 3, name: 'education.md', route: '/education' },
+    { index: 4, name: 'projects.md', route: '/projects' },  
+    { index: 5, name: 'certificates.md', route: '/certificates' },
+    { index: 6, name: 'accomplishments.md', route: '/accomplishments' },
+  ];
+   ```
+6. Runs the app in the development mode
+   ```sh
+   npm start
+   ```
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- USAGE EXAMPLES -->
+## Features
+
+- Powerd by markdown
+- Dark mode and light mode available
+- Closable tabs
+- Collapsible explorer
+- Responsive web design
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE.md` for more information.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- CONTACT -->
+## Contact
+
+Yan-Ying Liao - [Personal Portfolio](https://noworneverev.github.io/) - n9102125@gmail.com
+
+Project Link: [https://github.com/noworneverev/react-vscode-portfolio](https://github.com/noworneverev/react-vscode-portfolio)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
+
+* [Img Shields](https://shields.io)
+* [GitHub Pages](https://pages.github.com)
+* [React Icons](https://react-icons.github.io/react-icons/search)
+* [caglarturali.github.io](https://github.com/caglarturali/caglarturali.github.io)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[forks-shield]: https://img.shields.io/github/forks/noworneverev/react-vscode-portfolio
+[forks-url]: https://github.com/noworneverev/react-vscode-portfolio/network/members
+[stars-shield]: https://img.shields.io/github/stars/noworneverev/react-vscode-portfolio
+[stars-url]: https://github.com/noworneverev/react-vscode-portfolio/stargazers
+[issues-shield]: https://img.shields.io/github/issues/noworneverev/react-vscode-portfolio
+[issues-url]: https://github.com/noworneverev/react-vscode-portfolio/issues
+[license-shield]: https://img.shields.io/github/license/noworneverev/react-vscode-portfolio
+[license-url]: https://github.com/noworneverev/react-vscode-portfolio/blob/master/LICENSE.md
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/yan-ying-liao/
+[product-screenshot]: ./src/static/screenshot.gif
+[gh-pages-shield]: https://img.shields.io/github/deployments/noworneverev/noworneverev.github.io/github-pages
+[gh-pages-url]: https://github.com/noworneverev/noworneverev.github.io/deployments
+[website-shield]:https://img.shields.io/website?url=https%3A%2F%2Fnoworneverev.github.io%2F
+[website-url]: https://noworneverev.github.io/

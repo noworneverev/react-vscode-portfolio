@@ -4,7 +4,6 @@ export const pages = [
   { index: 2, name: 'experience.md', route: '/experience' },
   { index: 3, name: 'education.md', route: '/education' },
   { index: 4, name: 'projects.md', route: '/projects' },
-  // { index: 5, name: 'languages.md', route: '/languages' },
   { index: 5, name: 'certificates.md', route: '/certificates' },
   { index: 6, name: 'accomplishments.md', route: '/accomplishments' },
 ];
