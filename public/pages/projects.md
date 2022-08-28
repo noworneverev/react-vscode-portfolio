@@ -1,8 +1,18 @@
 # 🧪 Projects
 
+## [visa-termin-alert](https://github.com/noworneverev/visa-termin-alert) 🔗
+- The project is inspired by a terminated chatbot service which is aimed at providing instant German visa appointments status. As you may know, it is extremely difficult to book a appointment to apply German visa in Taiwan in busy season, one may have to refresh the termin page ALL DAY LONG FOR SEVERAL DAYS to reserve a seat. Since the German Institue don't tell us when vacant appointments will be released exactly, I built this chatbot to notify those who want to arrange appointments.
+- Python, Chatbot, LINE Bot, Deep Learning, Captcha Solving
+
+## [images-viewer](https://github.com/noworneverev/images-viewer) 🔗
+- A simple images viewer, scroll all images in one go.
+- React, Javascript
+- Hosted on https://noworneverev.github.io/images-viewer/
+
 ## [react-vscode-portfolio](https://github.com/noworneverev/react-vscode-portfolio) 🔗
-- What you are looking at now.
-- A vscode inspired portfolio project.
+- What you are looking at now
+- A vscode inspired portfolio project
+- Responsive Web Design 
 - React, TypeScript
 
 ## [go-germany](https://noworneverev.github.io/go-germany/) 🔗
@@ -24,6 +34,7 @@
   - go-germany-sync
     * [Python](https://www.python.org/)
     * [asyncpg](https://github.com/MagicStack/asyncpg)
+    * [Github Action](https://github.com/features/actions)
 
 ## [blog](https://github.com/noworneverev/blog) 🔗
 - The blog I built based on [docusaurus](https://github.com/noworneverev/blog) to document my learning progress and to share the add-ins I created which were used to increase my efficiency at work.
