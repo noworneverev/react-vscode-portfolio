@@ -24,6 +24,9 @@
 
 ## Cloud
 - Azure
+- GCP
+- Heroku
+- Render
 
 ## Vcs
 - Git
