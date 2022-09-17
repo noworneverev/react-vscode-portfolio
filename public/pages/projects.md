@@ -7,7 +7,7 @@
 ## [images-viewer](https://github.com/noworneverev/images-viewer) 🔗
 - A simple images viewer, scroll all images in one go.
 - React, Javascript
-- Hosted on https://noworneverev.github.io/images-viewer/
+- Hosted on [Github Pages](https://noworneverev.github.io/images-viewer/) 
 
 ## [react-vscode-portfolio](https://github.com/noworneverev/react-vscode-portfolio) 🔗
 - What you are looking at now
@@ -73,7 +73,7 @@
 ## [TickMark](https://github.com/noworneverev/TickMark) 🔗
 - An add-in for auditors and accountants. This Excel add-in is designed to help auditors to deal with working papers.
 - This was my first Visual Basic program. Before I wrote this Visual Basic based add-in, I only had some basic knowledge of VBA. I spent the whole March building this add-in and self-learning Visual Basic simultaneously.
-- Page: https://noworneverev.github.io/tickmark_demo/
+- Page: [TickMark Demo](https://noworneverev.github.io/tickmark_demo/)
 - Demo: https://youtu.be/Hi4jG4As_h8
 - VB.NET
 

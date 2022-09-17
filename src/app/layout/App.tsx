@@ -7,17 +7,18 @@ import {
   Stack,
   ThemeProvider,
   Typography,
-} from '@mui/material';
-import { useEffect, useState } from 'react';
-import AppTree from './AppTree';
-import Footer from './Footer';
-import Sidebar from './Sidebar';
-import { Routes, Route, useNavigate, Navigate } from 'react-router-dom';
-import AppButtons from './AppButtons';
-import MDContainer from '../components/MDContainer';
-import Home from '../pages/Home';
-import { pages } from '../pages/pages';
-import usePageTracking from '../hooks/usePageTracking';
+} from "@mui/material";
+import { useEffect, useState } from "react";
+import AppTree from "./AppTree";
+import Footer from "./Footer";
+import Sidebar from "./Sidebar";
+import { Routes, Route, useNavigate, Navigate } from "react-router-dom";
+import AppButtons from "./AppButtons";
+import MDContainer from "../components/MDContainer";
+import Home from "../pages/Home";
+import { pages } from "../pages/pages";
+import usePageTracking from "../hooks/usePageTracking";
+import { isBrowser } from "react-device-detect";
 
 interface Page {
   index: number;
@@ -36,33 +37,33 @@ function initVisiblePageIndexs(pages: Page[]) {
 
 export default function App() {
   const navigate = useNavigate();
-  const [expanded, setExpanded] = useState(true);
+  const [expanded, setExpanded] = useState(isBrowser);
   const [selectedIndex, setSelectedIndex] = useState(-1);
-  const [currentComponent, setCurrentComponent] = useState('');
+  const [currentComponent, setCurrentComponent] = useState("");
   const [visiblePageIndexs, setVisiblePageIndexs] = useState(
     initVisiblePageIndexs(pages)
   );
   const [darkMode, setDarkMode] = useState(false);
   const [visiblePages, setVisiblePages] = useState(pages);
-  const paletteType = darkMode ? 'dark' : 'light';
+  const paletteType = darkMode ? "dark" : "light";
   usePageTracking();
   const theme = createTheme({
     palette: {
       mode: paletteType,
       background: {
-        default: paletteType === 'light' ? '#FFFFFF' : '#1e1e1e',
+        default: paletteType === "light" ? "#FFFFFF" : "#1e1e1e",
       },
     },
     components: {
       MuiCssBaseline: {
         styleOverrides: {
-          body: paletteType === 'dark' ? darkScrollbar() : null,
+          body: paletteType === "dark" ? darkScrollbar() : null,
         },
       },
       MuiDivider: {
         styleOverrides: {
           root: {
-            borderColor: 'rgba(255, 255, 255, 0.12)',
+            borderColor: "rgba(255, 255, 255, 0.12)",
           },
         },
       },
@@ -71,13 +72,13 @@ export default function App() {
 
   function handleThemeChange() {
     setDarkMode(!darkMode);
-    localStorage.setItem('theme', darkMode ? 'light' : 'dark');
+    localStorage.setItem("theme", darkMode ? "light" : "dark");
   }
 
   useEffect(() => {
-    const currentTheme = localStorage.getItem('theme');
+    const currentTheme = localStorage.getItem("theme");
     if (!currentTheme) setDarkMode(true);
-    else setDarkMode(currentTheme === 'dark');
+    else setDarkMode(currentTheme === "dark");
   }, []);
 
   useEffect(() => {
@@ -95,7 +96,7 @@ export default function App() {
 
     if (visiblePageIndexs.length === 0) {
       setSelectedIndex(-1);
-      navigate('/');
+      navigate("/");
     } else if (
       deletedIndex === selectedIndex &&
       deletedIndex > Math.max(...visiblePageIndexs)
@@ -122,12 +123,12 @@ export default function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline enableColorScheme />
       <Container
-        sx={{ m: 0, p: 0, overflowY: 'hidden' }}
+        sx={{ m: 0, p: 0, overflowY: "hidden" }}
         maxWidth={false}
         disableGutters
       >
-        <Grid container sx={{ overflow: 'auto', overflowY: 'hidden' }}>
-          <Grid container sx={{ overflow: 'auto' }}>
+        <Grid container sx={{ overflow: "auto", overflowY: "hidden" }}>
+          <Grid container sx={{ overflow: "auto" }}>
             <Grid item sx={{ width: 50 }}>
               <Sidebar
                 setExpanded={setExpanded}
@@ -140,7 +141,7 @@ export default function App() {
               <Grid
                 item
                 sx={{
-                  backgroundColor: darkMode ? '#252527' : '#f3f3f3',
+                  backgroundColor: darkMode ? "#252527" : "#f3f3f3",
                   width: 220,
                 }}
               >
@@ -168,7 +169,7 @@ export default function App() {
             <Grid item xs zeroMinWidth>
               <Grid
                 sx={{
-                  height: '33px',
+                  height: "33px",
                 }}
               >
                 <AppButtons
@@ -185,9 +186,9 @@ export default function App() {
 
               <Grid
                 sx={{
-                  scrollBehavior: 'smooth',
+                  scrollBehavior: "smooth",
                   // overflow: 'scroll',
-                  overflowY: 'auto',
+                  overflowY: "auto",
                   height: `calc(100vh - 20px - 33px)`,
                 }}
               >

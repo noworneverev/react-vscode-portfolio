@@ -1,17 +1,17 @@
-import React from 'react';
-import { Box, IconButton, Link, Paper, Tooltip } from '@mui/material';
-import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
-import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
-import { VscFiles, VscSettingsGear } from 'react-icons/vsc';
-import { BiGitBranch } from 'react-icons/bi';
-import Divider from '@mui/material/Divider';
+import React from "react";
+import { Box, IconButton, Link, Paper, Tooltip } from "@mui/material";
+import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
+import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
+import { VscFiles, VscSettingsGear } from "react-icons/vsc";
+import { BiGitBranch } from "react-icons/bi";
+import Divider from "@mui/material/Divider";
 import {
   FaMedium,
   FaBlog,
   FaGithub,
   FaLinkedin,
   FaEnvelope,
-} from 'react-icons/fa';
+} from "react-icons/fa";
 
 interface Props {
   expanded: boolean;
@@ -31,7 +31,7 @@ export default function Sidebar({
       sx={{
         height: `calc(100vh - 20px)`,
         pt: 1,
-        backgroundColor: darkMode ? '#333333' : '#2c2c2c',
+        backgroundColor: darkMode ? "#333333" : "#2c2c2c",
       }}
       justifyContent="space-between"
       display="flex"
@@ -53,7 +53,7 @@ export default function Sidebar({
         >
           <IconButton
             onClick={() => setExpanded(!expanded)}
-            sx={{ color: 'white' }}
+            sx={{ color: "white" }}
           >
             <VscFiles />
           </IconButton>
@@ -67,11 +67,11 @@ export default function Sidebar({
           <Tooltip title="Source of this project" arrow placement="right">
             <Link
               target="_blank"
-              href={'https://github.com/noworneverev/react-vscode-portfolio'}
+              href={"https://github.com/noworneverev/react-vscode-portfolio"}
               underline="none"
               color="inherit"
             >
-              <IconButton sx={{ color: 'white' }}>
+              <IconButton sx={{ color: "white" }}>
                 <BiGitBranch />
               </IconButton>
             </Link>
@@ -88,11 +88,11 @@ export default function Sidebar({
           <Tooltip title="Find me on Github" arrow placement="right">
             <Link
               target="_blank"
-              href={'https://github.com/noworneverev'}
+              href={"https://github.com/noworneverev"}
               underline="none"
               color="inherit"
             >
-              <IconButton sx={{ color: 'white' }}>
+              <IconButton sx={{ color: "white" }}>
                 <FaGithub />
               </IconButton>
             </Link>
@@ -107,11 +107,11 @@ export default function Sidebar({
           <Tooltip title="Find me on LinkedIn" arrow placement="right">
             <Link
               target="_blank"
-              href={'https://www.linkedin.com/in/yan-ying-liao/'}
+              href={"https://www.linkedin.com/in/yan-ying-liao/"}
               underline="none"
               color="inherit"
             >
-              <IconButton sx={{ color: 'white' }}>
+              <IconButton sx={{ color: "white" }}>
                 <FaLinkedin />
               </IconButton>
             </Link>
@@ -126,11 +126,11 @@ export default function Sidebar({
           <Tooltip title="Contact me via email" arrow placement="right">
             <Link
               target="_blank"
-              href={'mailto:n9102125@gmail.com'}
+              href={"mailto:n9102125@gmail.com"}
               underline="none"
               color="inherit"
             >
-              <IconButton sx={{ color: 'white' }}>
+              <IconButton sx={{ color: "white" }}>
                 <FaEnvelope />
               </IconButton>
             </Link>
@@ -145,11 +145,11 @@ export default function Sidebar({
           <Tooltip title="Find me on Medium" arrow placement="right">
             <Link
               target="_blank"
-              href={'https://medium.com/@noworneverev'}
+              href={"https://medium.com/@noworneverev"}
               underline="none"
               color="inherit"
             >
-              <IconButton sx={{ color: 'white' }}>
+              <IconButton sx={{ color: "white" }}>
                 <FaMedium />
               </IconButton>
             </Link>
@@ -161,14 +161,14 @@ export default function Sidebar({
           display="flex"
           justifyContent="center"
         >
-          <Tooltip title="Fine me on Blog" arrow placement="right">
+          <Tooltip title="Find me on Blog" arrow placement="right">
             <Link
               target="_blank"
-              href={'https://noworneverev.github.io/blog/'}
+              href={"https://noworneverev.github.io/blog/"}
               underline="none"
               color="inherit"
             >
-              <IconButton sx={{ color: 'white' }}>
+              <IconButton sx={{ color: "white" }}>
                 <FaBlog />
               </IconButton>
             </Link>
@@ -188,7 +188,7 @@ export default function Sidebar({
               <IconButton
                 onClick={handleThemeChange}
                 color="inherit"
-                sx={{ color: 'white' }}
+                sx={{ color: "white" }}
               >
                 <DarkModeOutlinedIcon />
               </IconButton>
@@ -198,7 +198,7 @@ export default function Sidebar({
               <IconButton
                 onClick={handleThemeChange}
                 color="inherit"
-                sx={{ color: 'white' }}
+                sx={{ color: "white" }}
               >
                 <LightModeOutlinedIcon />
               </IconButton>
@@ -206,7 +206,7 @@ export default function Sidebar({
           )}
         </Box>
         <Box sx={{ flexGrow: 0 }} display="flex" justifyContent="center">
-          <IconButton sx={{ color: 'white' }}>
+          <IconButton sx={{ color: "white" }}>
             <VscSettingsGear />
           </IconButton>
         </Box>
