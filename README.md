@@ -117,9 +117,25 @@ The project is inspired by [Visual Studio Code](https://github.com/microsoft/vsc
     { index: 6, name: 'accomplishments.md', route: '/accomplishments' },
   ];
    ```
-6. Runs the app in the development mode
+6. Add your social links in `src/app/pages/link.tsx`, which will appear in both sidebar and homepage.
+   ```ts
+   export const links = [
+    {
+      index: 0,
+      title: "Find me on Github",
+      href: "https://github.com/noworneverev",
+      icon: <FaGithub />,
+    },
+  ];
+   ```
+7. Runs the app in the development mode
    ```sh
    npm start
+   ```
+8. If you would like to deploy your own portfolio, don't forget to change Google Analytic measurement id in `.env.production`
+   ```js
+   REACT_APP_NAME=<your_name>
+   REACT_APP_MEASUREMENT_ID=<your_measurement_id>
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -132,6 +148,7 @@ The project is inspired by [Visual Studio Code](https://github.com/microsoft/vsc
 - Closable tabs
 - Collapsible explorer
 - Responsive web design
+- Google Analytics supported
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
