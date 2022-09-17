@@ -83,13 +83,6 @@ The project is inspired by [Visual Studio Code](https://github.com/microsoft/vsc
 <!-- GETTING STARTED -->
 ## Getting Started
 
-### Prerequisites
-
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
 ### Installation
 
 1. Clone the repo
@@ -106,34 +99,34 @@ The project is inspired by [Visual Studio Code](https://github.com/microsoft/vsc
    ```
 4. Add your markdown pages in `public/pages`
 5. Add your routes in `src/app/pages/page.ts`, make sure the names of pages are consistent with markdown files.
-  ```ts
-   export const pages = [
-    { index: 0, name: 'overview.md', route: '/overview' },
-    { index: 1, name: 'skills.md', route: '/skills' },
-    { index: 2, name: 'experience.md', route: '/experience' },
-    { index: 3, name: 'education.md', route: '/education' },
-    { index: 4, name: 'projects.md', route: '/projects' },  
-    { index: 5, name: 'certificates.md', route: '/certificates' },
-    { index: 6, name: 'accomplishments.md', route: '/accomplishments' },
-  ];
-   ```
+    ```ts
+    export const pages = [
+      { index: 0, name: 'overview.md', route: '/overview' },
+      { index: 1, name: 'skills.md', route: '/skills' },
+      { index: 2, name: 'experience.md', route: '/experience' },
+      { index: 3, name: 'education.md', route: '/education' },
+      { index: 4, name: 'projects.md', route: '/projects' },  
+      { index: 5, name: 'certificates.md', route: '/certificates' },
+      { index: 6, name: 'accomplishments.md', route: '/accomplishments' },
+    ];
+    ```
 6. Add your social links in `src/app/pages/link.tsx`, which will appear in both sidebar and homepage.
-   ```ts
-   export const links = [
-    {
-      index: 0,
-      title: "Find me on Github",
-      href: "https://github.com/noworneverev",
-      icon: <FaGithub />,
-    },
-  ];
-   ```
+    ```ts
+    export const links = [
+      {
+        index: 0,
+        title: "Find me on Github",
+        href: "https://github.com/noworneverev",
+        icon: <FaGithub />,
+      },
+    ];
+    ```
 7. Runs the app in the development mode
    ```sh
    npm start
    ```
 8. If you would like to deploy your own portfolio, don't forget to change Google Analytic measurement id in `.env.production`
-   ```js
+   ```
    REACT_APP_NAME=<your_name>
    REACT_APP_MEASUREMENT_ID=<your_measurement_id>
    ```
