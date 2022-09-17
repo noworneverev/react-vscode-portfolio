@@ -12,6 +12,7 @@ import {
   FaLinkedin,
   FaEnvelope,
 } from "react-icons/fa";
+import { links } from "../pages/links";
 
 interface Props {
   expanded: boolean;
@@ -80,100 +81,24 @@ export default function Sidebar({
 
         <Divider sx={{ m: 0.5 }} />
 
-        <Box
-          sx={{ flexGrow: 0, m: 0.5 }}
-          display="flex"
-          justifyContent="center"
-        >
-          <Tooltip title="Find me on Github" arrow placement="right">
-            <Link
-              target="_blank"
-              href={"https://github.com/noworneverev"}
-              underline="none"
-              color="inherit"
-            >
-              <IconButton sx={{ color: "white" }}>
-                <FaGithub />
-              </IconButton>
-            </Link>
-          </Tooltip>
-        </Box>
-
-        <Box
-          sx={{ flexGrow: 0, m: 0.5 }}
-          display="flex"
-          justifyContent="center"
-        >
-          <Tooltip title="Find me on LinkedIn" arrow placement="right">
-            <Link
-              target="_blank"
-              href={"https://www.linkedin.com/in/yan-ying-liao/"}
-              underline="none"
-              color="inherit"
-            >
-              <IconButton sx={{ color: "white" }}>
-                <FaLinkedin />
-              </IconButton>
-            </Link>
-          </Tooltip>
-        </Box>
-
-        <Box
-          sx={{ flexGrow: 0, m: 0.5 }}
-          display="flex"
-          justifyContent="center"
-        >
-          <Tooltip title="Contact me via email" arrow placement="right">
-            <Link
-              target="_blank"
-              href={"mailto:n9102125@gmail.com"}
-              underline="none"
-              color="inherit"
-            >
-              <IconButton sx={{ color: "white" }}>
-                <FaEnvelope />
-              </IconButton>
-            </Link>
-          </Tooltip>
-        </Box>
-
-        <Box
-          sx={{ flexGrow: 0, m: 0.5 }}
-          display="flex"
-          justifyContent="center"
-        >
-          <Tooltip title="Find me on Medium" arrow placement="right">
-            <Link
-              target="_blank"
-              href={"https://medium.com/@noworneverev"}
-              underline="none"
-              color="inherit"
-            >
-              <IconButton sx={{ color: "white" }}>
-                <FaMedium />
-              </IconButton>
-            </Link>
-          </Tooltip>
-        </Box>
-
-        <Box
-          sx={{ flexGrow: 0, m: 0.5 }}
-          display="flex"
-          justifyContent="center"
-        >
-          <Tooltip title="Find me on Blog" arrow placement="right">
-            <Link
-              target="_blank"
-              href={"https://noworneverev.github.io/blog/"}
-              underline="none"
-              color="inherit"
-            >
-              <IconButton sx={{ color: "white" }}>
-                <FaBlog />
-              </IconButton>
-            </Link>
-          </Tooltip>
-        </Box>
+        {links.map((link) => (
+          <Box
+            sx={{ flexGrow: 0, m: 0.5 }}
+            display="flex"
+            justifyContent="center"
+          >
+            <Tooltip title={link.title} arrow placement="right">
+              <Link
+                target="_blank"
+                href={link.href}
+                underline="none"
+                color="inherit"
+              >
+                <IconButton sx={{ color: "white" }}>{link.icon}</IconButton>
+              </Link>
+            </Tooltip>
+          </Box>
+        ))}
       </Box>
 
       <Box
