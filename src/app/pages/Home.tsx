@@ -69,7 +69,7 @@ export default function Home({ setSelectedIndex }: Props) {
             >
               <Stack direction="row" spacing={0.4}>
                 {links.map((link) => (
-                  <Tooltip title={link.title} arrow>
+                  <Tooltip key={link.index} title={link.title} arrow>
                     <Link
                       target="_blank"
                       href={link.href}

@@ -5,13 +5,6 @@ import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import { VscFiles, VscSettingsGear } from "react-icons/vsc";
 import { BiGitBranch } from "react-icons/bi";
 import Divider from "@mui/material/Divider";
-import {
-  FaMedium,
-  FaBlog,
-  FaGithub,
-  FaLinkedin,
-  FaEnvelope,
-} from "react-icons/fa";
 import { links } from "../pages/links";
 
 interface Props {
@@ -83,6 +76,7 @@ export default function Sidebar({
 
         {links.map((link) => (
           <Box
+            key={link.index}
             sx={{ flexGrow: 0, m: 0.5 }}
             display="flex"
             justifyContent="center"
