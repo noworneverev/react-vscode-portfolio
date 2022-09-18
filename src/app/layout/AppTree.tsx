@@ -8,6 +8,12 @@ import { useEffect } from "react";
 import { useTheme } from "@mui/material/styles";
 import { VscMarkdown } from "react-icons/vsc";
 
+interface Page {
+  index: number;
+  name: string;
+  route: string;
+}
+
 interface Props {
   pages: {
     index: number;
@@ -36,12 +42,13 @@ export default function AppTree({
   // const [selectedIndex, setSelectedIndex] = useState(-1);
   let { pathname } = useLocation();
 
+  const page: Page = pages.find((x) => x.route === pathname)!;
+
   useEffect(() => {
-    const page = pages.find((x) => x.route === pathname);
     if (page) {
       setSelectedIndex(page.index);
     }
-  }, [pathname, pages, setSelectedIndex]);
+  }, [page, setSelectedIndex]);
 
   function renderTreeItemBgColor(index: number) {
     if (theme.palette.mode === "dark") {

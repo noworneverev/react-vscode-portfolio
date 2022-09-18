@@ -81,11 +81,11 @@ export default function App() {
     else setDarkMode(currentTheme === "dark");
   }, []);
 
-  useEffect(() => {
-    const deletedIndex = visiblePages.find(
-      (x) => !visiblePageIndexs.includes(x.index)
-    )?.index;
+  const deletedIndex = visiblePages.find(
+    (x) => !visiblePageIndexs.includes(x.index)
+  )?.index;
 
+  useEffect(() => {
     const newPages = [];
 
     for (const index of visiblePageIndexs) {
@@ -117,7 +117,7 @@ export default function App() {
       if (page) navigate(page.route);
     } else {
     }
-  }, [visiblePageIndexs, navigate, selectedIndex, visiblePages]);
+  }, [visiblePageIndexs, navigate, deletedIndex, selectedIndex]);
 
   return (
     <ThemeProvider theme={theme}>
