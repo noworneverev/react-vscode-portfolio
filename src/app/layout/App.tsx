@@ -117,7 +117,7 @@ export default function App() {
       if (page) navigate(page.route);
     } else {
     }
-  }, [visiblePageIndexs]);
+  }, [visiblePageIndexs, navigate, selectedIndex, visiblePages]);
 
   return (
     <ThemeProvider theme={theme}>

@@ -1,12 +1,12 @@
-import * as React from 'react';
-import TreeView from '@mui/lab/TreeView';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import TreeItem from '@mui/lab/TreeItem';
-import { useLocation, useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
-import { useTheme } from '@mui/material/styles';
-import { VscMarkdown } from 'react-icons/vsc';
+import * as React from "react";
+import TreeView from "@mui/lab/TreeView";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import TreeItem from "@mui/lab/TreeItem";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import { useTheme } from "@mui/material/styles";
+import { VscMarkdown } from "react-icons/vsc";
 
 interface Props {
   pages: {
@@ -41,23 +41,23 @@ export default function AppTree({
     if (page) {
       setSelectedIndex(page.index);
     }
-  }, [pathname]);
+  }, [pathname, pages, setSelectedIndex]);
 
   function renderTreeItemBgColor(index: number) {
-    if (theme.palette.mode === 'dark') {
-      return selectedIndex === index ? 'rgba(144,202,249,0.16)' : '#252527';
+    if (theme.palette.mode === "dark") {
+      return selectedIndex === index ? "rgba(144,202,249,0.16)" : "#252527";
     } else {
-      return selectedIndex === index ? '#295fbf' : '#f3f3f3';
+      return selectedIndex === index ? "#295fbf" : "#f3f3f3";
     }
   }
 
   function renderTreeItemColor(index: number) {
-    if (theme.palette.mode === 'dark') {
-      return selectedIndex === index && currentComponent === 'tree'
-        ? 'white'
-        : '#bdc3cf';
+    if (theme.palette.mode === "dark") {
+      return selectedIndex === index && currentComponent === "tree"
+        ? "white"
+        : "#bdc3cf";
     } else {
-      return selectedIndex === index ? '#e2ffff' : '#69665f';
+      return selectedIndex === index ? "#e2ffff" : "#69665f";
     }
   }
 
@@ -67,7 +67,7 @@ export default function AppTree({
       defaultCollapseIcon={<ExpandMoreIcon />}
       defaultExpandIcon={<ChevronRightIcon />}
       sx={{ minWidth: 220 }}
-      defaultExpanded={['-1']}
+      defaultExpanded={["-1"]}
 
       // sx={{ height: 240, flexGrow: 1, maxWidth: 400, overflowY: 'auto' }}
     >
@@ -76,7 +76,7 @@ export default function AppTree({
         label="Home"
         color="#bdc3cf"
         onClick={() => {
-          navigate('/');
+          navigate("/");
           setSelectedIndex(-1);
         }}
       >
@@ -88,7 +88,7 @@ export default function AppTree({
             sx={{
               color: renderTreeItemColor(index),
               backgroundColor: renderTreeItemBgColor(index),
-              '&& .Mui-selected': {
+              "&& .Mui-selected": {
                 backgroundColor: renderTreeItemBgColor(index),
               },
             }}
@@ -100,7 +100,7 @@ export default function AppTree({
               }
               navigate(route);
               setSelectedIndex(index);
-              setCurrentComponent('tree');
+              setCurrentComponent("tree");
             }}
           />
         ))}
