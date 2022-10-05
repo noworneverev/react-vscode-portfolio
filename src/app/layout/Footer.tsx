@@ -1,10 +1,11 @@
-import { Box, Grid, Paper, Stack, Typography } from "@mui/material";
+import { Box, Grid, Link, Paper, Stack, Typography } from "@mui/material";
 import {
   VscRemote,
   VscError,
   VscWarning,
   VscBell,
   VscFeedback,
+  VscCheck,
 } from "react-icons/vsc";
 import { IoIosGitBranch } from "react-icons/io";
 
@@ -29,17 +30,6 @@ export default function Footer() {
           }}
           display="flex"
         >
-          {/* <Box
-            component={Paper}
-            square
-            elevation={0}
-            // display="flex"
-            // justifyContent="center"
-            // alignItems="center"
-            sx={{ backgroundColor: 'green' }}
-          >
-            <VscRemote />
-          </Box> */}
           <VscRemote />
         </Grid>
         <Grid
@@ -47,42 +37,50 @@ export default function Footer() {
           sx={{ backgroundColor: "#3279CB", width: "200px" }}
           display="flex"
         >
-          <Stack direction="row" spacing={1} sx={{ pl: 1 }}>
+          <Stack direction="row" spacing={0.5} sx={{ pl: 1 }}>
             <Stack direction="row" spacing={0.5}>
-              <Box
-                display="flex"
-                sx={{
-                  justifyContent: "center",
-                  alignItems: "center",
-                  // pt: 0.3,
-                }}
+              {/* <Tooltip title="react-vscode-portoflio (Git)" arrow> */}
+              <Link
+                href="https://github.com/noworneverev/react-vscode-portfolio"
+                underline="none"
+                color="white"
+                target="_blank"
               >
-                {/* <Button
-                  startIcon={<IoIosGitBranch />}
+                <Box
+                  display="flex"
                   sx={{
-                    fontSize: 1,
-                    color: 'white',
-                    textTransform: 'none',
-                    borderRadius: 0,
-                    p: 0,
+                    px: 0.5,
+                    justifyContent: "center",
+                    alignItems: "center",
+                    cursor: "pointer",
+                    "&:hover": {
+                      background: "#1f8ad2",
+                    },
                   }}
-                  // disableElevation
-                  disableRipple
-                  size="small"
                 >
-                  master
-                </Button> */}
-                <IoIosGitBranch />
-                <Typography sx={{ fontSize: 5 }}>main</Typography>
-              </Box>
+                  <IoIosGitBranch />
+                  <Typography sx={{ fontSize: 5 }}>main</Typography>
+                </Box>
+              </Link>
+              {/* </Tooltip> */}
             </Stack>
-            <Stack direction="row" spacing={0.5}>
+            <Stack
+              direction="row"
+              spacing={0.5}
+              sx={{
+                px: 0.5,
+                cursor: "pointer",
+                "&:hover": {
+                  background: "#1f8ad2",
+                },
+              }}
+            >
               <Box
                 display="flex"
                 sx={{
                   justifyContent: "center",
                   alignItems: "center",
-                  pt: 0.3,
+                  py: 0.3,
                 }}
               >
                 <VscError fontSize="14px" />
@@ -103,7 +101,7 @@ export default function Footer() {
                 sx={{
                   justifyContent: "center",
                   alignItems: "center",
-                  pt: 0.3,
+                  py: 0.3,
                 }}
               >
                 <VscWarning fontSize="14px" />
@@ -133,12 +131,37 @@ export default function Footer() {
               // display="flex"
               justifyContent="end"
               direction="row"
-              spacing={1}
+              spacing={0.8}
               sx={{ pr: 1.5 }}
             >
               <Box
                 display="flex"
-                sx={{ justifyContent: "center", alignItems: "center", pt: 0.3 }}
+                sx={{
+                  px: 0.5,
+                  justifyContent: "center",
+                  alignItems: "center",
+                  cursor: "pointer",
+                  "&:hover": {
+                    background: "#1f8ad2",
+                  },
+                }}
+              >
+                <VscCheck />
+                <Typography sx={{ fontSize: 5, ml: 0.5 }}>Prettier</Typography>
+              </Box>
+
+              <Box
+                display="flex"
+                sx={{
+                  justifyContent: "center",
+                  alignItems: "center",
+                  py: 0.3,
+                  px: 0.5,
+                  cursor: "pointer",
+                  "&:hover": {
+                    background: "#1f8ad2",
+                  },
+                }}
               >
                 <VscFeedback fontSize="14px" />
               </Box>
@@ -148,7 +171,12 @@ export default function Footer() {
                   width: "50%",
                   justifyContent: "center",
                   alignItems: "center",
-                  pt: 0.3,
+                  py: 0.3,
+                  px: 0.5,
+                  cursor: "pointer",
+                  "&:hover": {
+                    background: "#1f8ad2",
+                  },
                 }}
               >
                 <VscBell fontSize="14px" />
