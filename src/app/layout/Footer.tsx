@@ -27,6 +27,10 @@ export default function Footer() {
             backgroundColor: "#2E8461",
             justifyContent: "center",
             alignItems: "center",
+            cursor: "pointer",
+            "&:hover": {
+              background: "#329171",
+            },
           }}
           display="flex"
         >
