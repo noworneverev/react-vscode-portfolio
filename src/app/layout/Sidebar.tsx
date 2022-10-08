@@ -41,7 +41,11 @@ export default function Sidebar({
       >
         <Box
           sx={{
-            borderLeft: expanded ? "solid 0.12em white" : "none",
+            borderLeft: expanded
+              ? "solid 0.12em white"
+              : darkMode
+              ? "solid 0.12em #333333"
+              : "solid 0.12em #2c2c2c",
             cursor: "pointer",
           }}
           onClick={() => setExpanded(!expanded)}
