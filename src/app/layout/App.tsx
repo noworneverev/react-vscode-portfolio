@@ -147,7 +147,7 @@ export default function App() {
               >
                 <Stack sx={{ mt: 1 }}>
                   <Typography
-                    variant="body2"
+                    variant="caption"
                     color="text.secondary"
                     sx={{ ml: 4 }}
                   >
