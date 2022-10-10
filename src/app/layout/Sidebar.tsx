@@ -47,6 +47,7 @@ export default function Sidebar({
               ? "solid 0.12em #333333"
               : "solid 0.12em #2c2c2c",
             cursor: "pointer",
+            WebkitTapHighlightColor: "rgba(0,0,0,0)",
           }}
           onClick={() => setExpanded(!expanded)}
         >
@@ -56,7 +57,7 @@ export default function Sidebar({
               my: 1.5,
               color: expanded ? "white" : "#858585",
               fontSize: 24,
-
+              outline: "none",
               "&:hover": {
                 color: "white",
               },
@@ -73,6 +74,7 @@ export default function Sidebar({
             href={"https://github.com/noworneverev/react-vscode-portfolio"}
             underline="none"
             color="inherit"
+            sx={{ WebkitTapHighlightColor: "rgba(0,0,0,0)" }}
           >
             <Box
               sx={{
@@ -103,6 +105,7 @@ export default function Sidebar({
               href={link.href}
               underline="none"
               color="inherit"
+              sx={{ WebkitTapHighlightColor: "rgba(0,0,0,0)" }}
             >
               <Box
                 sx={{
@@ -145,6 +148,7 @@ export default function Sidebar({
               "&:hover": {
                 color: "white",
               },
+              WebkitTapHighlightColor: "rgba(0,0,0,0)",
             }}
             display="flex"
             justifyContent="center"
@@ -170,6 +174,7 @@ export default function Sidebar({
             "&:hover": {
               color: "white",
             },
+            WebkitTapHighlightColor: "rgba(0,0,0,0)",
           }}
           display="flex"
           justifyContent="center"
