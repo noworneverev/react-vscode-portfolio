@@ -6,8 +6,9 @@ import {
   VscBell,
   VscFeedback,
   VscCheck,
+  VscRepoForked,
 } from "react-icons/vsc";
-import { IoIosGitBranch } from "react-icons/io";
+// import { IoIosGitBranch } from "react-icons/io";
 
 export default function Footer() {
   return (
@@ -56,14 +57,15 @@ export default function Footer() {
                   px: 0.5,
                   justifyContent: "center",
                   alignItems: "center",
-                  cursor: "pointer",
+                  // cursor: "pointer",
                   "&:hover": {
                     background: "#1f8ad2",
                   },
                 }}
               >
-                <IoIosGitBranch fontSize="0.9rem" />
-                <Typography sx={{ mt: 0.1, fontSize: "0.6rem" }}>
+                {/* <IoIosGitBranch fontSize="0.9rem" /> */}
+                <VscRepoForked fontSize="0.9rem" />
+                <Typography sx={{ ml: 0.5, mt: 0.1, fontSize: "0.6rem" }}>
                   main
                 </Typography>
               </Box>
