@@ -62,8 +62,7 @@ export default function Footer() {
                     },
                   }}
                 >
-                  <IoIosGitBranch />
-                  {/* <Typography sx={{ fontSize: 5 }}>main</Typography> */}
+                  <IoIosGitBranch fontSize="0.9rem" />
                   <Typography sx={{ mt: 0.1, fontSize: "0.5rem" }}>
                     main
                   </Typography>
@@ -90,7 +89,7 @@ export default function Footer() {
                   py: 0.3,
                 }}
               >
-                <VscError fontSize="14px" />
+                <VscError fontSize="0.9rem" />
               </Box>
               <Box
                 display="flex"
@@ -100,7 +99,7 @@ export default function Footer() {
                   pt: 0.3,
                 }}
               >
-                <Typography sx={{ fontSize: 5 }}>0</Typography>
+                <Typography sx={{ fontSize: "0.5rem" }}>0</Typography>
               </Box>
 
               <Box
@@ -111,7 +110,7 @@ export default function Footer() {
                   py: 0.3,
                 }}
               >
-                <VscWarning fontSize="14px" />
+                <VscWarning fontSize="0.9rem" />
               </Box>
               <Box
                 display="flex"
@@ -121,7 +120,7 @@ export default function Footer() {
                   pt: 0.3,
                 }}
               >
-                <Typography sx={{ fontSize: 5 }}>0</Typography>
+                <Typography sx={{ fontSize: "0.5rem" }}>0</Typography>
               </Box>
             </Stack>
           </Stack>
@@ -153,8 +152,10 @@ export default function Footer() {
                   },
                 }}
               >
-                <VscCheck />
-                <Typography sx={{ fontSize: 5, ml: 0.5 }}>Prettier</Typography>
+                <VscCheck fontSize="0.9rem" />
+                <Typography sx={{ ml: 0.5, mt: 0.1, fontSize: "0.5rem" }}>
+                  Prettier
+                </Typography>
               </Box>
 
               <Box
@@ -170,7 +171,7 @@ export default function Footer() {
                   },
                 }}
               >
-                <VscFeedback fontSize="14px" />
+                <VscFeedback fontSize="0.9rem" />
               </Box>
               <Box
                 display="flex"
@@ -186,7 +187,7 @@ export default function Footer() {
                   },
                 }}
               >
-                <VscBell fontSize="14px" />
+                <VscBell fontSize="0.9rem" />
               </Box>
             </Stack>
           </Box>
