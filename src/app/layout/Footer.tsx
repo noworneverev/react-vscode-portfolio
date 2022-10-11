@@ -63,7 +63,10 @@ export default function Footer() {
                   }}
                 >
                   <IoIosGitBranch />
-                  <Typography sx={{ fontSize: 5 }}>main</Typography>
+                  {/* <Typography sx={{ fontSize: 5 }}>main</Typography> */}
+                  <Typography sx={{ mt: 0.1, fontSize: "0.5rem" }}>
+                    main
+                  </Typography>
                 </Box>
               </Link>
               {/* </Tooltip> */}
