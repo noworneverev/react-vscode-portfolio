@@ -8,7 +8,6 @@ import {
   VscCheck,
 } from "react-icons/vsc";
 import { IoIosGitBranch } from "react-icons/io";
-import { isBrowser } from "react-device-detect";
 
 export default function Footer() {
   return (
