@@ -142,6 +142,7 @@ The project is inspired by [Visual Studio Code](https://github.com/microsoft/vsc
 - Collapsible explorer
 - Responsive web design
 - Google Analytics supported
+- Auto-deploy to gh-pages with github actions ready
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
