@@ -8,6 +8,7 @@ import {
   VscCheck,
 } from "react-icons/vsc";
 import { IoIosGitBranch } from "react-icons/io";
+import { isBrowser } from "react-device-detect";
 
 export default function Footer() {
   return (
@@ -34,7 +35,7 @@ export default function Footer() {
           }}
           display="flex"
         >
-          <VscRemote />
+          <VscRemote fontSize="0.9rem" />
         </Grid>
         <Grid
           item
@@ -42,34 +43,34 @@ export default function Footer() {
           display="flex"
         >
           <Stack direction="row" spacing={0.5} sx={{ pl: 1 }}>
-            <Stack direction="row" spacing={0.5}>
-              {/* <Tooltip title="react-vscode-portoflio (Git)" arrow> */}
-              <Link
-                href="https://github.com/noworneverev/react-vscode-portfolio"
-                underline="none"
-                color="white"
-                target="_blank"
+            {/* <Stack direction="row" spacing={0.5}> */}
+            {/* <Tooltip title="react-vscode-portoflio (Git)" arrow> */}
+            <Link
+              href="https://github.com/noworneverev/react-vscode-portfolio"
+              underline="none"
+              color="white"
+              target="_blank"
+            >
+              <Box
+                display="flex"
+                sx={{
+                  px: 0.5,
+                  justifyContent: "center",
+                  alignItems: "center",
+                  cursor: "pointer",
+                  "&:hover": {
+                    background: "#1f8ad2",
+                  },
+                }}
               >
-                <Box
-                  display="flex"
-                  sx={{
-                    px: 0.5,
-                    justifyContent: "center",
-                    alignItems: "center",
-                    cursor: "pointer",
-                    "&:hover": {
-                      background: "#1f8ad2",
-                    },
-                  }}
-                >
-                  <IoIosGitBranch fontSize="0.9rem" />
-                  <Typography sx={{ mt: 0.1, fontSize: "0.5rem" }}>
-                    main
-                  </Typography>
-                </Box>
-              </Link>
-              {/* </Tooltip> */}
-            </Stack>
+                <IoIosGitBranch fontSize="0.9rem" />
+                <Typography sx={{ mt: 0.1, fontSize: "0.6rem" }}>
+                  main
+                </Typography>
+              </Box>
+            </Link>
+            {/* </Tooltip> */}
+            {/* </Stack> */}
             <Stack
               direction="row"
               spacing={0.5}
@@ -99,7 +100,7 @@ export default function Footer() {
                   pt: 0.3,
                 }}
               >
-                <Typography sx={{ fontSize: "0.5rem" }}>0</Typography>
+                <Typography sx={{ fontSize: "0.6rem" }}>0</Typography>
               </Box>
 
               <Box
@@ -120,7 +121,7 @@ export default function Footer() {
                   pt: 0.3,
                 }}
               >
-                <Typography sx={{ fontSize: "0.5rem" }}>0</Typography>
+                <Typography sx={{ fontSize: "0.6rem" }}>0</Typography>
               </Box>
             </Stack>
           </Stack>
@@ -153,7 +154,7 @@ export default function Footer() {
                 }}
               >
                 <VscCheck fontSize="0.9rem" />
-                <Typography sx={{ ml: 0.5, mt: 0.1, fontSize: "0.5rem" }}>
+                <Typography sx={{ ml: 0.5, mt: 0.1, fontSize: "0.6rem" }}>
                   Prettier
                 </Typography>
               </Box>
