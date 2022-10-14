@@ -136,7 +136,7 @@ The project is inspired by [Visual Studio Code](https://github.com/microsoft/vsc
 <!-- USAGE EXAMPLES -->
 ## Features
 
-- Powerd by markdown
+- Powered by markdown
 - Dark mode and light mode available
 - Closable tabs
 - Collapsible explorer
