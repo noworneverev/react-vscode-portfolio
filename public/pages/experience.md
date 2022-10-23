@@ -1,25 +1,35 @@
 # 👨‍💻 Experience
 
-**Software Developer** @ [Ernst & Young](https://www.ey.com/) _(Nov 2018 - Nov 2021)_
+**Tech Lead / CTO** @ [Vendee](https://www.vendee.com.br/) _(Nov 2021)_
 
-Completed full lifecycle application development to enterprise business applications including requirement analysis, system design, development, unit testing, implementation, testing support, performance tuning, maintenance, and post-production support.
+Completed full lifecycle application development to SRM business applications including requirement analysis, system design, development, unit testing, implementation, testing support, performance tuning, maintenance, and post-production support.
+
 - Detailed achievements:
-  - Collaborated with colleagues from worldwide to implement the Disaster Recovery Project. Completed ahead of the original schedule and saved budget up to 30%.
-  - Optimized deployment process and reduced manual work to accelerate product deployment by over 70%.
-  - Delivered virtual and live classroom training for employees(the cumulative number of trainees exceeded 500).
-- _**Technologies used:**_ C#, MSSQL, Python, React.js
+
+  - Created a new API for the application , increasing overall Application performance in 300%.
+  - Optimized deployment and development processes and reduced workload in CI/CD in over 40%.
+
+  - _**Technologies used:**_ JavaScript, TypeScripy, ES6+, Node.js, Express.js, Jest, MongoDb, Mongoose, Firebase, Python, React.js, Tailwind CSS, Bootstrap.
 
 &nbsp;
 
-**Staff Auditor** @ [Deloitte & Touche](https://www2.deloitte.com/global/en.html) _(July 2017 - Nov 2018)_
+**Fullstack Software Developer** @ [Modesto Digital](https://github.com/ModestoDigital) _(Mach 2020)_
 
-Planned and conducted operational and ﬁnancial audits to conﬁrm ﬁnancial statements are fairly presented in alignment with IFRS.
+Software analisys, development and debugging for startUps.
+
 - Detailed achievements:
-  - Delivered internal audit projects for major clients in the manufacturing industry with a focus on gap assessments/reviews of business processes and internal control.
-  - Supervised assigned auditing staffs to evaluate performance and maintain standards.
+
+  - Refactoring of deprecated systems and redevelopment of features in more efficient technologies.
+  - Database restructurings
+  - New Features requisits analisys, design development and Deploy.
+  - Implementations of CI/CD pipelines
+
+  - _**Technologies used:**_ JavaScript, TypeScripy, ES6+, Node.js, Express.js, Jest, MongoDb, Mongoose, PostGres, MySQL, Python, React.js, Vue.js, Angular,js, Tailwind CSS, Bootstrap.
 
 &nbsp;
 
-**Audit Intern** @ [KPMG](https://home.kpmg/) _(July 2015 - July 2015)_
+**Front End Developer** @ [Herospark](https://www.herospark.com.br) _(January 2019 - March 2020)_
 
-Performed analytical procedures and analyses to detect unusual ﬁnancial relationships.
+development of a new SAAS, implementing Agile Methodologies including Scrum and Kanban to Product and Software development in the company.
+
+- _**Technologies used:**_ JavaScript, ES6+, MySQL, React.js, Tailwind CSS, Bootstrap.

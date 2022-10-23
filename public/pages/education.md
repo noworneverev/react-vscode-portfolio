@@ -1,26 +1,13 @@
 # 👨‍🎓 Education
 
-`2021-2022` [National Taipei University of Technology](https://www-en.ntut.edu.tw/)
-- **Extension program** in Computer Science, Electrical Engineering, and Electronic Engineering
-- Courses: Computer Organization, Discrete Mathematics, Computer Program-
-ming(I), Object-Oriented Programming, Probability, Digital Logic Design
-- GPA: 4.0/4.0
+`2011-2015` [Universidade Federal do ABC](https://www.ufabc.edu.br/en/)
 
-`2021-2022` [National Taiwan Normal University](https://en.ntnu.edu.tw/)
-- **Extension program** in Electrical Engineering
-- Courses: Operating Systems
-- GPA: 4.3/4.3
+- **Graduation program** in Science and Technology.
+- Courses: Communication and Information, Information structure, Programming algorithms, Data Structure, Representation and Simulation, Statistics and Applied sciences.
+- GPA: 3.8/4.0
 
-`2020–2022` [Fu Jen Catholic University](https://www.fju.edu.tw/indexEN.jsp)
-- **Extension program** in Software Engineering and Digital Innovation Applications, and Information Management 
-- Courses: Algorithms, Linear Algebra, Database Administration
-- GPA: 4.0/4.0
+`2021-2025` [Universidade Positivo](https://www.up.edu.br/)
 
-`2020-2021` [National Taipei University of Business](https://www.ntub.edu.tw/index.php?Lang=en)
-- **Extension program** in Information Management 
-- Courses: Data Structures
-- GPA: 4.0/4.0
-
-`2012-2016` [National Cheng Kung University](https://www.ncku.edu.tw/index.php?Lang=en)
-- **B.B.A** in Accountancy
-- GPA: 3.88/4.0
+- **Post-graduation program** in Data Science and AI.
+- Courses: Artificial Inteligence Algorithms, Mathematics, Statistics, Phisics and Ethics.
+- GPA: 3.9/4.0

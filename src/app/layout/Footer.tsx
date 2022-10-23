@@ -45,14 +45,14 @@ export default function Footer() {
             {/* <Stack direction="row" spacing={0.5}> */}
             {/* <Tooltip title="react-vscode-portoflio (Git)" arrow> */}
             {/* <Link
-              href="https://github.com/noworneverev/react-vscode-portfolio"
+              href="https://github.com/ModestoDigital"
               underline="none"
               color="white"
               target="_blank"
             > */}
             <Box
               component={Link}
-              href="https://github.com/noworneverev/react-vscode-portfolio"
+              href="https://github.com/ModestoDigital"
               underline="none"
               color="white"
               target="_blank"

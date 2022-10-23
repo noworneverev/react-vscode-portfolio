@@ -2,70 +2,119 @@
 
 ## Summary
 
-Senior Software Developer specializing in web application development. Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages including C# .NET, Python and JavaScript/TypeScript. Strong background in both accounting/auditing and software development. Mitigated the gap between end users and developers, co-designed and built scalable solutions.
+I am first and foremost passionate for problem-solving, from a software feature that solves a user pain to the management of processes through established Frameworks of project management, Product Discovery, Scrum, Kanban and Agile Methodologies.
+In my career, I acted from Software developer to Project manager, always following work ethics and best practices, aiming to bring continuous performance and efficiency improvements in all solutions I've worked.
+I have always been regarded as a very focused professional and hardworking person, receiving once an award as best service provided worldwide during an internal company review.
+Furthermore, I currently live in Brazil, I am fluent in English and Spanish and native in Portuguese.
 
+Stack : React, Node, JavaScript, Typescript, Java, C#, Google Cloud, MySQL, Postgres, Firebase e MongoDB.
 
 ## Experience
 
-**Software Developer** @ [Ernst & Young](https://www.ey.com/) _(Nov 2018 - Nov 2021)_
+**Tech Lead / CTO** @ [Vendee](https://www.vendee.com.br/) _(Nov 2021)_
 
-Completed full lifecycle application development to enterprise business applications including requirement analysis, system design, development, unit testing, implementation, testing support, performance tuning, maintenance, and post-production support.
+Completed full lifecycle application development to SRM business applications including requirement analysis, system design, development, unit testing, implementation, testing support, performance tuning, maintenance, and post-production support.
+
 - Detailed achievements:
-  - Collaborated with colleagues from worldwide to implement the Disaster Recovery Project. Completed ahead of the original schedule and saved budget up to 30%.
-  - Optimized deployment process and reduced manual work to accelerate product deployment by over 70%.
-  - Delivered virtual and live classroom training for employees(the cumulative number of trainees exceeded 500).
-- _**Technologies used:**_ C#, MSSQL, Python, React.js
+
+  - Created a new API for the application , increasing overall Application performance in 300%.
+  - Optimized deployment and development processes and reduced workload in CI/CD in over 40%.
+
+  - _**Technologies used:**_ JavaScript, TypeScripy, ES6+, Node.js, Express.js, Jest, MongoDb, Mongoose, Firebase, Python, React.js, Tailwind CSS, Bootstrap.
 
 &nbsp;
 
-**Staff Auditor** @ [Deloitte & Touche](https://www2.deloitte.com/global/en.html) _(July 2017 - Nov 2018)_
+**Fullstack Software Developer** @ [Modesto Digital](https://github.com/ModestoDigital) _(Mach 2020)_
 
-Planned and conducted operational and ﬁnancial audits to conﬁrm ﬁnancial statements are fairly presented in alignment with IFRS.
+Software analisys, development and debugging for startUps.
+
 - Detailed achievements:
-  - Delivered internal audit projects for major clients in the manufacturing industry with a focus on gap assessments/reviews of business processes and internal control.
-  - Supervised assigned auditing staffs to evaluate performance and maintain standards.
+
+  - Refactoring of deprecated systems and redevelopment of features in more efficient technologies.
+  - Database restructurings
+  - New Features requisits analisys, design development and Deploy.
+  - Implementations of CI/CD pipelines
+
+  - _**Technologies used:**_ JavaScript, TypeScripy, ES6+, Node.js, Express.js, Jest, MongoDb, Mongoose, PostGres, MySQL, Python, React.js, Vue.js, Angular,js, Tailwind CSS, Bootstrap.
 
 &nbsp;
 
-**Audit Intern** @ [KPMG](https://home.kpmg/) _(July 2015 - July 2015)_
+**Front End Developer** @ [Herospark](https://www.herospark.com.br) _(January 2019 - March 2020)_
 
-Performed analytical procedures and analyses to detect unusual ﬁnancial relationships.
+development of a new SAAS, implementing Agile Methodologies including Scrum and Kanban to Product and Software development in the company.
+
+- _**Technologies used:**_ JavaScript, ES6+, MySQL, React.js, Tailwind CSS, Bootstrap.
 
 ## Education
 
-`2021-2022` [National Taipei University of Technology](https://www-en.ntut.edu.tw/)
-- **Extension program** in Computer Science, Electrical Engineering, and Electronic Engineering
-- Courses: Computer Organization, Discrete Mathematics, Computer Program-
-ming(I), Object-Oriented Programming, Probability, Digital Logic Design
-- GPA: 4.0/4.0
+`2011-2015` [Universidade Federal do ABC](https://www.ufabc.edu.br/en/)
 
-`2021-2022` [National Taiwan Normal University](https://en.ntnu.edu.tw/)
-- **Extension program** in Electrical Engineering
-- Courses: Operating Systems
-- GPA: 4.3/4.3
+- **Graduation program** in Science and Technology.
+- Courses: Communication and Information, Information structure, Programming algorithms, Data Structure, Representation and Simulation, Statistics and Applied sciences.
+- GPA: 3.8/4.0
 
-`2020–2022` [Fu Jen Catholic University](https://www.fju.edu.tw/indexEN.jsp)
-- **Extension program** in Software Engineering and Digital Innovation Applications, and Information Management 
-- Courses: Algorithms, Linear Algebra, Database Administration
-- GPA: 4.0/4.0
+`2021-2025` [Universidade Positivo](https://www.up.edu.br/)
 
-`2020-2021` [National Taipei University of Business](https://www.ntub.edu.tw/index.php?Lang=en)
-- **Extension program** in Information Management 
-- Courses: Data Structures
-- GPA: 4.0/4.0
-
-`2012-2016` [National Cheng Kung University](https://www.ncku.edu.tw/index.php?Lang=en)
-- **B.B.A** in Accountancy
-- GPA: 3.88/4.0
+- **Post-graduation program** in Data Science and AI.
+- Courses: Artificial Inteligence Algorithms, Mathematics, Statistics, Phisics and Ethics.
+- GPA: 3.9/4.0
 
 ## Skills
 
+## General Tech Stacks
+
+- Architecture Design
+- Desktop App Development
+- Web Development (Frontend & Backend)
+
+## Programming languages
+
+- JavaScript/TypeScript
+  - React.js
+  - Vue.js
+  - Angular.js
+  - Node.JS
+    -Express.js
+- Python
+- T-SQL
+- C#
+- Java
+- VB.NET/VBA
+
+## Databases
+
+- SQL
+  - MSSQL
+  - PostgreSQL
+  - MySQL
+  - SQLite
+- MongoDB
+- MariaDB
+- Firebase
+
+## Cloud
+
+- AWS
+- ECS
+- EB
+- GCP
+  - Firestore
+  - Firebase Functions
+- Heroku
+- Render
+
+## Vcs
+
+- Git
+
 ### General Tech Stacks
+
 - Architecture Design
 - Desktop App Development
 - Web Development (Frontend & Backend)
 
 ### Programming languages
+
 - C# .NET
 - Python
 - JavaScript/TypeScript
@@ -77,12 +126,13 @@ ming(I), Object-Oriented Programming, Probability, Digital Logic Design
 - VB.NET/VBA
 
 ## Certificates
-- Certified Public Accountant (Taiwan)
 
-## Accomplishments
-**Won First Place** @ [EY Innovation Campaign](https://www.ey.com/) _(May 2021)_
-Built Trial Balance System, a system that streamlines data transmission across users, providing consistent, reliable financial reports to them. 
+- Squads, Sprints and Agile Methodologies Certification - Slash Education (Brazil)
+- Coaching Healthy Behaviors Certification - Gol Airlines (Brazil)
+- Project Planning and Management with PMBOK - UFABC (Brazil)
 
 ## Languages
-**English**: C1
-**Chinese**: Native
+
+**English**: C2
+**Spanish**: C1
+**Portuguese**: Native

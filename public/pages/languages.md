@@ -1,3 +1,5 @@
 # 💬 Languages
-**English**: C1
-**Chinese**: Native
+
+**English**: C2
+**Spanish**: C1
+**Portuguese**: Native
