@@ -124,12 +124,20 @@ The project is inspired by [Visual Studio Code](https://github.com/microsoft/vsc
 7. Runs the app in the development mode
    ```sh
    npm start
+   ```   
+8. If you would like to deploy your own portfolio,  
+   - modify homepage property in `package.json` 
    ```
-8. If you would like to deploy your own portfolio, don't forget to change Google Analytic measurement id in `.env.production`
+   "homepage": "https://{username}.github.io/{repo-name}"
+   ```
+   > \* For a [project site](https://pages.github.com/#project-site), that's the format. For a [user site](https://pages.github.com/#user-site), the format is: `https://{username}.github.io`. You can read more about the `homepage` property in the ["GitHub Pages" section](https://create-react-app.dev/docs/deployment/#github-pages) of the `create-react-app` documentation.   
+
+   - modify Google Analytic measurement id in `.env.production`
    ```
    REACT_APP_NAME=<your_name>
-   REACT_APP_MEASUREMENT_ID=<your_measurement_id>
+   REACT_APP_MEASUREMENT_ID=<your_measurement_id>   
    ```
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
