@@ -53,6 +53,7 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
+    <li><a href="#demonstration">Features</a></li> 
     <li><a href="#features">Features</a></li>        
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -125,12 +126,14 @@ The project is inspired by [Visual Studio Code](https://github.com/microsoft/vsc
    ```sh
    npm start
    ```   
-8. If you would like to deploy your own portfolio,  
+8. Deploy your own portfolio,  
    - modify homepage property in `package.json` 
    ```
    "homepage": "https://{username}.github.io/{repo-name}"
    ```
    > \* For a [project site](https://pages.github.com/#project-site), that's the format. For a [user site](https://pages.github.com/#user-site), the format is: `https://{username}.github.io`. You can read more about the `homepage` property in the ["GitHub Pages" section](https://create-react-app.dev/docs/deployment/#github-pages) of the `create-react-app` documentation.   
+  
+
 
    - modify Google Analytic measurement id in `.env.production`
    ```
@@ -138,6 +141,14 @@ The project is inspired by [Visual Studio Code](https://github.com/microsoft/vsc
    REACT_APP_MEASUREMENT_ID=<your_measurement_id>   
    ```
 
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Demonstration
+
+- The project is deployed to following two domains, and they are in synchronization.
+  - user site: [https://noworneverev.github.io/](https://noworneverev.github.io/)
+  - project site: [https://noworneverev.github.io/react-vscode-portfolio/](https://noworneverev.github.io/react-vscode-portfolio/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
