@@ -19,6 +19,13 @@ import { useLocation } from "react-router-dom";
 import rehypeRaw from "rehype-raw";
 import remarkBreaks from "remark-breaks";
 import remarkGfm from "remark-gfm";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import {
+  materialLight,
+  materialDark,
+} from "react-syntax-highlighter/dist/esm/styles/prism";
+import { ReactElement } from "react-markdown/lib/react-markdown";
+import { useTheme } from "@mui/material/styles";
 
 interface Props {
   path: string;
@@ -43,6 +50,7 @@ function MarkdownTable(props: { children: ReactNode }) {
 }
 
 function MarkdownTableCell(props: { children: ReactNode }) {
+  console.log(props);
   return (
     <TableCell>
       {props.children}
@@ -51,8 +59,24 @@ function MarkdownTableCell(props: { children: ReactNode }) {
   );
 }
 
-function MarkdownCode(props: { children: ReactNode }) {
-  return <Chip size="small" label={props.children?.toString()} />;
+function MarkdownCode(props: any): ReactElement {
+  const theme = useTheme();
+  let isDarkMode = theme.palette.mode === "dark";
+  if (props.inline)
+    return <Chip size="small" label={props.children?.toString()} />;
+  else {
+    const language = props.className.split("-")[1];
+    return (
+      <SyntaxHighlighter
+        language={language}
+        style={isDarkMode ? materialDark : materialLight}
+        PreTag="div"
+        showLineNumbers={true}
+      >
+        {props.children}
+      </SyntaxHighlighter>
+    );
+  }
 }
 
 function MarkdownH1(props: { children: ReactNode }) {
@@ -97,42 +121,25 @@ function MarkdownH2(props: { children: ReactNode }) {
   );
 }
 
-// function MarkdownParagraph(props: { children: ReactNode }) {
-//   if (!props.children) return <Typography>{props.children}</Typography>;
-
-//   const element: any = props.children;
-//   let result = [];
-
-//   let anyInlineElement = false;
-//   for (let e of element) {
-//     if (e.type) {
-//       anyInlineElement = true;
-//     }
-//   }
-
-//   if (anyInlineElement) {
-//     for (let e of element) {
-//       if (e.type) {
-//         result.push({ ...e });
-//       } else {
-//         result.push(
-//           <Typography key={e} display="inline">
-//             {e}
-//           </Typography>
-//         );
-//       }
-//     }
+// function MarkdownCheckbox(props: any) {
+//   let checked = props.checked;
+//   if (checked) {
+//     return (
+//       <FormControlLabel
+//         disabled
+//         control={<Checkbox defaultChecked />}
+//         label={props.label}
+//       />
+//     );
 //   } else {
-//     for (let e of element) {
-//       if (e.type) {
-//         result.push({ ...e });
-//       } else {
-//         result.push(<Typography key={e}>{e}</Typography>);
-//       }
-//     }
+//     return (
+//       <FormControlLabel disabled control={<Checkbox />} label={props.label} />
+//     );
 //   }
+// }
 
-//   return <>{result}</>;
+// function MarkdownImage(props: any) {
+//   return <img src={props.src} alt={props.alt} />;
 // }
 
 export default function MDContainer({ path }: Props) {
@@ -168,6 +175,8 @@ export default function MDContainer({ path }: Props) {
           h1: MarkdownH1,
           h2: MarkdownH2,
           // br: MarkdownBr,
+          // input: MarkdownCheckbox,
+          // img: MarkdownImage,
         }}
         remarkPlugins={[remarkGfm, remarkBreaks]}
         rehypePlugins={[rehypeRaw]}
