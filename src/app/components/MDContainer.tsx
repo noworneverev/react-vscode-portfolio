@@ -82,9 +82,9 @@ function MarkdownTableRow(props: { children: ReactNode }) {
 function MarkdownCode(props: any): ReactElement {
   const theme = useTheme();
   let isDarkMode = theme.palette.mode === "dark";
-  if (props.inline)
+  if (props.inline) {
     return <Chip size="small" label={props.children?.toString()} />;
-  else {
+  } else {
     const language = props.className.split("-")[1];
     return (
       <SyntaxHighlighter
@@ -161,6 +161,10 @@ function MarkdownH2(props: { children: ReactNode }) {
 // function MarkdownImage(props: any) {
 //   return <img src={props.src} alt={props.alt} />;
 // }
+
+function MarkdownParagraph(props: { children: ReactNode }) {
+  return <div>{props.children}</div>;
+}
 
 export default function MDContainer({ path }: Props) {
   const [content, setContent] = useState("");
