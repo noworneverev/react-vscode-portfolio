@@ -48,8 +48,7 @@
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
+      <ul>        
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
@@ -141,6 +140,10 @@ The project is inspired by [Visual Studio Code](https://github.com/microsoft/vsc
    REACT_APP_MEASUREMENT_ID=<your_measurement_id>   
    ```
 
+### Alternative Deployment
+```
+docker-compose up
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
