@@ -26,10 +26,32 @@ import {
 } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { ReactElement } from "react-markdown/lib/react-markdown";
 import { useTheme } from "@mui/material/styles";
+import { tableCellClasses } from "@mui/material/TableCell";
+import { styled } from "@mui/material/styles";
 
 interface Props {
   path: string;
 }
+
+const StyledTableCell = styled(TableCell)(({ theme }) => ({
+  [`&.${tableCellClasses.head}`]: {
+    backgroundColor: theme.palette.common.black,
+    color: theme.palette.common.white,
+  },
+  [`&.${tableCellClasses.body}`]: {
+    fontSize: 14,
+  },
+}));
+
+const StyledTableRow = styled(TableRow)(({ theme }) => ({
+  "&:nth-of-type(odd)": {
+    backgroundColor: theme.palette.action.hover,
+  },
+  // hide last border
+  "&:last-child td, &:last-child th": {
+    border: 0,
+  },
+}));
 
 function MarkdownLink(props: any) {
   return (
@@ -50,13 +72,11 @@ function MarkdownTable(props: { children: ReactNode }) {
 }
 
 function MarkdownTableCell(props: { children: ReactNode }) {
-  console.log(props);
-  return (
-    <TableCell>
-      {props.children}
-      {/* <Typography>{props.children}</Typography> */}
-    </TableCell>
-  );
+  return <StyledTableCell>{props.children}</StyledTableCell>;
+}
+
+function MarkdownTableRow(props: { children: ReactNode }) {
+  return <StyledTableRow>{props.children}</StyledTableRow>;
 }
 
 function MarkdownCode(props: any): ReactElement {
@@ -169,7 +189,7 @@ export default function MDContainer({ path }: Props) {
           thead: TableHead,
           tbody: TableBody,
           th: MarkdownTableCell,
-          tr: TableRow,
+          tr: MarkdownTableRow,
           td: MarkdownTableCell,
           tfoot: TableFooter,
           h1: MarkdownH1,
