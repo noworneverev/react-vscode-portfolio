@@ -176,9 +176,9 @@ function MarkdownH2(props: { children: ReactNode }) {
 //   return <img src={props.src} alt={props.alt} />;
 // }
 
-function MarkdownParagraph(props: { children: ReactNode }) {
-  return <div>{props.children}</div>;
-}
+// function MarkdownParagraph(props: { children: ReactNode }) {
+//   return <div>{props.children}</div>;
+// }
 
 export default function MDContainer({ path }: Props) {
   const [content, setContent] = useState("");
@@ -212,6 +212,7 @@ export default function MDContainer({ path }: Props) {
           tfoot: TableFooter,
           h1: MarkdownH1,
           h2: MarkdownH2,
+          hr: MarkdownDivider,
           // br: MarkdownBr,
           // input: MarkdownCheckbox,
           // img: MarkdownImage,
