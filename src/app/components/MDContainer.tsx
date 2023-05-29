@@ -81,7 +81,7 @@ function MarkdownTableRow(props: { children: ReactNode }) {
 
 function MarkdownCode(props: any): ReactElement {
   const theme = useTheme();
-  let isDarkMode = theme.palette.mode === "dark";
+  const isDarkMode = theme.palette.mode === "dark";
   if (props.inline) {
     return <Chip size="small" label={props.children?.toString()} />;
   } else {
@@ -97,6 +97,20 @@ function MarkdownCode(props: any): ReactElement {
       </SyntaxHighlighter>
     );
   }
+}
+
+function MarkdownDivider() {
+  const theme = useTheme();
+  const isDarkMode = theme.palette.mode === "dark";
+  return (
+    <>
+      {isDarkMode ? (
+        <Divider sx={{ bgcolor: "#393939" }} />
+      ) : (
+        <Divider sx={{ bgcolor: "#eeeeee" }} />
+      )}
+    </>
+  );
 }
 
 function MarkdownH1(props: { children: ReactNode }) {
@@ -115,7 +129,7 @@ function MarkdownH1(props: { children: ReactNode }) {
       >
         {props.children}
       </Typography>
-      <Divider />
+      <MarkdownDivider />
     </>
   );
 }
@@ -136,7 +150,7 @@ function MarkdownH2(props: { children: ReactNode }) {
       >
         {props.children}
       </Typography>
-      <Divider />
+      <MarkdownDivider />
     </>
   );
 }
