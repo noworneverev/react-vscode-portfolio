@@ -1,4 +1,5 @@
 import {
+  Box,
   Chip,
   Container,
   Divider,
@@ -155,6 +156,14 @@ function MarkdownH2(props: { children: ReactNode }) {
   );
 }
 
+function MarkdownBlockquote(props: any): ReactElement {
+  return (
+    <Box sx={{ borderLeft: 3, borderColor: "#eeeeee" }}>
+      <blockquote>{props.children}</blockquote>
+    </Box>
+  );
+}
+
 // function MarkdownCheckbox(props: any) {
 //   let checked = props.checked;
 //   if (checked) {
@@ -216,6 +225,7 @@ export default function MDContainer({ path }: Props) {
           // br: MarkdownBr,
           // input: MarkdownCheckbox,
           // img: MarkdownImage,
+          blockquote: MarkdownBlockquote,
         }}
         remarkPlugins={[remarkGfm, remarkBreaks]}
         rehypePlugins={[rehypeRaw]}
