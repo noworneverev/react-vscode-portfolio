@@ -202,9 +202,32 @@ function MarkdownBlockquote(props: any): ReactElement {
 //   return <img src={props.src} alt={props.alt} />;
 // }
 
-// function MarkdownParagraph(props: { children: ReactNode }) {
-//   return <div>{props.children}</div>;
-// }
+function MarkdownParagraph(props: any): ReactElement {
+  // console.log(props);
+  // if (typeof props.children[0]["$$typeof"] === "symbol")
+  const keyToCheck = "$$typeof";
+  const exists = props.children.some(
+    (obj: { hasOwnProperty: (arg0: string) => any }) =>
+      obj.hasOwnProperty(keyToCheck)
+  );
+
+  if (exists) {
+    return (
+      <Box
+        sx={{
+          display: "block",
+          marginBlockStart: "1em",
+          marginBlockEnd: "1em",
+          marginInlineStart: "0px",
+          marginInlineEnd: "0px",
+        }}
+      >
+        {props.children}
+      </Box>
+    );
+  }
+  return <p>{props.children}</p>;
+}
 
 export default function MDContainer({ path }: Props) {
   const [content, setContent] = useState("");
@@ -228,7 +251,7 @@ export default function MDContainer({ path }: Props) {
         components={{
           code: MarkdownCode,
           a: MarkdownLink,
-          // p: MarkdownParagraph,
+          p: MarkdownParagraph,
           table: MarkdownTable,
           thead: TableHead,
           tbody: TableBody,
