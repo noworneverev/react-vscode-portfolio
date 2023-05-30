@@ -72,8 +72,16 @@ function MarkdownTable(props: { children: ReactNode }) {
   );
 }
 
-function MarkdownTableCell(props: { children: ReactNode }) {
-  return <StyledTableCell>{props.children}</StyledTableCell>;
+function MarkdownTableCell(props: any): ReactElement {
+  if (props.style && props.style.textAlign === "right") {
+    return (
+      <StyledTableCell sx={{ textAlign: "right" }}>
+        {props.children}
+      </StyledTableCell>
+    );
+  } else {
+    return <StyledTableCell>{props.children}</StyledTableCell>;
+  }
 }
 
 function MarkdownTableRow(props: { children: ReactNode }) {
