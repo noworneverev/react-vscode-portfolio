@@ -85,7 +85,7 @@ function MarkdownCode(props: any): ReactElement {
   const isDarkMode = theme.palette.mode === "dark";
   if (props.inline) {
     return <Chip size="small" label={props.children?.toString()} />;
-  } else {
+  } else if (props.className) {
     const language = props.className.split("-")[1];
     return (
       <SyntaxHighlighter
@@ -93,6 +93,15 @@ function MarkdownCode(props: any): ReactElement {
         style={isDarkMode ? materialDark : materialLight}
         PreTag="div"
         showLineNumbers={true}
+      >
+        {props.children}
+      </SyntaxHighlighter>
+    );
+  } else {
+    return (
+      <SyntaxHighlighter
+        style={isDarkMode ? materialDark : materialLight}
+        PreTag="div"
       >
         {props.children}
       </SyntaxHighlighter>
