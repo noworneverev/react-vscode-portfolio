@@ -1,4 +1,5 @@
 import {
+  Alert,
   Box,
   Chip,
   Container,
@@ -203,14 +204,33 @@ function MarkdownBlockquote(props: any): ReactElement {
 // }
 
 function MarkdownParagraph(props: any): ReactElement {
-  // console.log(props);
-  // if (typeof props.children[0]["$$typeof"] === "symbol")
   const keyToCheck = "$$typeof";
   const exists = props.children.some(
     (obj: { hasOwnProperty: (arg0: string) => any }) =>
       obj.hasOwnProperty(keyToCheck)
   );
 
+  const isWarning =
+    typeof props.children[0] === "string" &&
+    props.children[0].includes(":::") &&
+    props.children.slice(-1)[0].includes(":::");
+
+  if (isWarning) {
+    const severity = props.children[0].split(" ")[1];
+    return (
+      <Box
+        sx={{
+          display: "block",
+          marginBlockStart: "1em",
+          marginBlockEnd: "1em",
+          marginInlineStart: "0px",
+          marginInlineEnd: "0px",
+        }}
+      >
+        <Alert severity={severity}>{props.children.slice(2, -1)}</Alert>
+      </Box>
+    );
+  }
   if (exists) {
     return (
       <Box
