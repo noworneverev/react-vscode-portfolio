@@ -28,9 +28,9 @@
     <br />
     <a href="https://noworneverev.github.io/">View Demo</a>
     ·
-    <a href="https://github.com/noworneverev/react-vscode-portfolio/issues">Report Bug</a>
+    <a href="https://noworneverev.github.io/#/docs">Markdown prview</a>
     ·
-    <a href="https://github.com/noworneverev/react-vscode-portfolio/issues">Request Feature</a>
+    <a href="https://github.com/noworneverev/react-vscode-portfolio/issues">Report Bug</a>
   </p>
 </div>
 
@@ -159,12 +159,17 @@ docker-compose up
 ## Features
 
 - Powered by markdown
+- Extended markdown syntax supported
+  - Syntax highlight
+  - Alert
 - Dark mode and light mode available
 - Closable tabs
 - Collapsible explorer
 - Responsive web design
 - Google Analytics supported
 - Auto-deploy to gh-pages with github actions ready
+
+Markdown preview: https://noworneverev.github.io/#/docs
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
