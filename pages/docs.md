@@ -104,11 +104,11 @@ Right aligned columns
 
 ## Links
 
-[link text](http://dev.nodeca.com)
+[link text](https://noworneverev.github.io/)
 
-[link with title](http://nodeca.github.io/pica/demo/ "title text!")
+[link with title](https://github.com/noworneverev/react-vscode-portfolio "title text!")
 
-Autoconverted link https://github.com/nodeca/pica 
+Autoconverted link https://noworneverev.github.io/ 
 
 ## Alerts
 ::: warning
