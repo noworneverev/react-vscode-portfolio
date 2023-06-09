@@ -103,7 +103,7 @@ function MarkdownCode(props: any): ReactElement {
         PreTag="div"
         showLineNumbers={true}
       >
-        {props.children}
+        {props.children.toString().trim()}
       </SyntaxHighlighter>
     );
   } else {
