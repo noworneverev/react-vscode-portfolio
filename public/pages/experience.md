@@ -1,6 +1,6 @@
 # 👨‍💻 Experience
 
-**Security Operations Engineer** @ [Cloudflare](https:/cloudflare.com/) _(Oct 2022 - Present)_
+**Security Operations Engineer** @ [Cloudflare](https://cloudflare.com) _(Oct 2022 - Present)_
 
 Vulnerability Management:
 - Conducting validation and verification of identified vulnerabilities, ensuring accuracy and relevance.
@@ -28,6 +28,6 @@ Established and upheld security best practices to oversee shared hosting server 
 
 &nbsp;
 
-**Security Analyst Intern** @ [SIBS Multicert](https://www.multicert.com/) _(Feb 2021 - August 2021)_
+**Security Analyst Intern** @ [SIBS Multicert](https://www.multicert.com) _(Feb 2021 - August 2021)_
 
 Served as a Security Analyst, specializing in triage of Security Incidents and Incident Reports Automation. I developed custom scripts to streamline asset data enrichment, improving our incident response efficiency.
