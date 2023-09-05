@@ -8,7 +8,7 @@ import {
   Typography,
 } from "@mui/material";
 import React, { useEffect } from "react";
-import logo from "../../static/logo.jpeg";
+import logo from "../../static/logo.png";
 import { useLocation } from "react-router-dom";
 import { links } from "./links";
 
