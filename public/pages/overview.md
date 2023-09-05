@@ -2,8 +2,8 @@
 
 ## Summary
 
-Security Operations Engineer specializing in vulnerability management and processes automation. Experienced with all stages of a vulnerability and incident response lifecycle.
-Well-versed in programming languages such as Python and Javascript/Typescript. Strong background and passion for processes automation and software architecture design & development.
+I'm a 23 year old Security Operations Engineer specializing in vulnerability management and processes automation. Experienced with all stages of a vulnerability and incident response lifecycle.
+Well-versed in programming languages such as Python and Javascript/Typescript with a strong background and passion for processes automation and software architecture design & development.
 
 
 ## 👨‍💻 Experience
@@ -49,19 +49,30 @@ Served as a Security Analyst, specializing in triage of Security Incidents and I
 
 ## 💻 Skills
 
+### Technologies
+- Postgres
+- MySQL
+- Nginx
+- Docker
+- Kubernetes
+
 ### Programming languages
 - Python
 - JavaScript/TypeScript
 - Go
 
-### CI/CD
-- Github Actions
-- Teamcity
+### Frameworks
+- FastAPI
+- Flask
 
 ### Cloud
 - Cloudflare
 - GCP
 - AWS
+
+### CI/CD
+- Github Actions
+- Teamcity
 
 ### Others
 - Git
