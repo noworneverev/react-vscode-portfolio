@@ -1,3 +1,3 @@
 # 💬 Languages
 **English**: C1
-**Chinese**: Native
+**Portuguese**: Native

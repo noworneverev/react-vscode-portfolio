@@ -1,25 +1,33 @@
 # 👨‍💻 Experience
 
-**Software Developer** @ [Ernst & Young](https://www.ey.com/) _(Nov 2018 - Nov 2021)_
+**Security Operations Engineer** @ [Cloudflare](https:/cloudflare.com/) _(Oct 2022 - Present)_
 
-Completed full lifecycle application development to enterprise business applications including requirement analysis, system design, development, unit testing, implementation, testing support, performance tuning, maintenance, and post-production support.
+Vulnerability Management:
+- Conducting validation and verification of identified vulnerabilities, ensuring accuracy and relevance.
+- Facilitate the identification of asset/product owners and coordinate with relevant teams for resolution.
+- Validate engineering team's fixes and ensure they effectively mitigate vulnerabilities.
+- Managing vulnerability deviation requests.
+- Triage reports from the bug bounty program, assessing their severity and validity.
+- Issuing CVEs and security advisories when necessary to communicate vulnerabilities to stakeholders.
+
+Automation:
+- Developed automated solutions for asset/product owner identification, reducing manual effort.
+- Implemented automation to validate remediation efforts, increasing operational efficiency.
+
 - Detailed achievements:
-  - Collaborated with colleagues from worldwide to implement the Disaster Recovery Project. Completed ahead of the original schedule and saved budget up to 30%.
-  - Optimized deployment process and reduced manual work to accelerate product deployment by over 70%.
-  - Delivered virtual and live classroom training for employees(the cumulative number of trainees exceeded 500).
-- _**Technologies used:**_ C#, MSSQL, Python, React.js
+  - Collaborated with the compliance department to enhance vulnerability scanning processes.
+  - Implemented a priority formula that considers environmental and exploitability likelihood factors, leading to improved risk prioritization.
+  - Reduced resolution time for vulnerabilities.
+- _**Technologies used:**_ Python, Golang, K8S, Cloudflare Workers
 
 &nbsp;
 
-**Staff Auditor** @ [Deloitte & Touche](https://www2.deloitte.com/global/en.html) _(July 2017 - Nov 2018)_
+**Customer Success Tech Lead** @ [Epik Registrar](https://epik.com) _(Jul 2021 - Aug 2022)_
 
-Planned and conducted operational and ﬁnancial audits to conﬁrm ﬁnancial statements are fairly presented in alignment with IFRS.
-- Detailed achievements:
-  - Delivered internal audit projects for major clients in the manufacturing industry with a focus on gap assessments/reviews of business processes and internal control.
-  - Supervised assigned auditing staffs to evaluate performance and maintain standards.
+Established and upheld security best practices to oversee shared hosting server management. Developed a KPI tracking platform for the Customer Success department, whilst collaborating closely to optimize and automate their operational workflows.
 
 &nbsp;
 
-**Audit Intern** @ [KPMG](https://home.kpmg/) _(July 2015 - July 2015)_
+**Security Analyst Intern** @ [SIBS Multicert](https://www.multicert.com/) _(Feb 2021 - August 2021)_
 
-Performed analytical procedures and analyses to detect unusual ﬁnancial relationships.
+Served as a Security Analyst, specializing in triage of Security Incidents and Incident Reports Automation. I developed custom scripts to streamline asset data enrichment, improving our incident response efficiency.
