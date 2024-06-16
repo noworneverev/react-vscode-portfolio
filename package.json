@@ -1,7 +1,7 @@
 {
   "name": "react-vscode-portfolio",
   "version": "0.1.0",
-  "homepage": "https://noworneverev.github.io",
+  "homepage": "https://psyrun.github.io",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",
