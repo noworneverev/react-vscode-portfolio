@@ -7,6 +7,17 @@ Senior Software Developer specializing in web application development. Experienc
 
 ## Experience
 
+**Research Engineer** @ [Fraunhofer Institute for Applied Information Technology FIT | Data Science and Artificial Intelligence](https://www.fit.fraunhofer.de/en/business-areas/data-science-and-artificial-intelligence.html) _(Jan 2024 - Present)_
+
+Focused on Retrieval-Augmented Generation (RAG) and Knowledge Graphs.
+- Detailed achievements:
+  - Developed the BAföG chatbot using RAG, optimizing it to provide more accurate and relevant responses, benefiting students applying for financial aid.
+  - Collaborated with Deloitte to develop a hybrid RAG(VectorRAG, GraphRAG) system, improving business decision-making.
+  - Automated administrative tasks through scripting, resulting in a 90% efficiency increase.
+- _**Technologies used:**_ Python, LangChain, LangGraph, LlamaIndex, Ollama, Neo4j, MLflow
+
+&nbsp;
+
 **Software Developer** @ [Ernst & Young](https://www.ey.com/) _(Nov 2018 - Nov 2021)_
 
 Completed full lifecycle application development to enterprise business applications including requirement analysis, system design, development, unit testing, implementation, testing support, performance tuning, maintenance, and post-production support.
@@ -32,6 +43,9 @@ Planned and conducted operational and ﬁnancial audits to conﬁrm ﬁnancial s
 Performed analytical procedures and analyses to detect unusual ﬁnancial relationships.
 
 ## Education
+
+`2022-present` [RWTH Aachen University](https://www.rwth-aachen.de/)
+- **M.Sc.** in Software Systems Engineering
 
 `2021-2022` [National Taipei University of Technology](https://www-en.ntut.edu.tw/)
 - **Extension program** in Computer Science, Electrical Engineering, and Electronic Engineering
