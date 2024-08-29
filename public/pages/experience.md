@@ -1,5 +1,17 @@
 # 👨‍💻 Experience
 
+
+**Research Engineer** @ [Fraunhofer Institute for Applied Information Technology FIT | Data Science and Artificial Intelligence](https://www.fit.fraunhofer.de/en/business-areas/data-science-and-artificial-intelligence.html) _(Jan 2024 - Present)_
+
+Focused on Retrieval-Augmented Generation (RAG) and Knowledge Graphs.
+- Detailed achievements:
+  - Developed the BAföG chatbot using RAG, optimizing it to provide more accurate and relevant responses, benefiting students applying for financial aid.
+  - Collaborated with Deloitte to develop a hybrid RAG(VectorRAG, GraphRAG) system, improving business decision-making.
+  - Automated administrative tasks through scripting, resulting in a 90% efficiency increase.
+- _**Technologies used:**_ Python, LangChain, LangGraph, LlamaIndex, Ollama, Neo4j, MLflow
+
+&nbsp;
+
 **Software Developer** @ [Ernst & Young](https://www.ey.com/) _(Nov 2018 - Nov 2021)_
 
 Completed full lifecycle application development to enterprise business applications including requirement analysis, system design, development, unit testing, implementation, testing support, performance tuning, maintenance, and post-production support.
