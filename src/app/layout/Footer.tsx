@@ -1,4 +1,12 @@
-import { Box, Grid, Link, Paper, Stack, Typography } from "@mui/material";
+import {
+  Box,
+  Grid,
+  Link,
+  Paper,
+  Stack,
+  Typography,
+  useTheme,
+} from "@mui/material";
 import {
   VscRemote,
   VscError,
@@ -10,12 +18,13 @@ import {
 import { IoIosGitBranch } from "react-icons/io";
 
 export default function Footer() {
+  const theme = useTheme();
+
   return (
     <Box
       component={Paper}
       square
       elevation={0}
-      // sx={{ height: '3vh' }}
       sx={{ height: "20px", color: "white" }}
       display="flex"
     >
@@ -42,14 +51,6 @@ export default function Footer() {
           display="flex"
         >
           <Stack direction="row" spacing={0.5} sx={{ pl: 1 }}>
-            {/* <Stack direction="row" spacing={0.5}> */}
-            {/* <Tooltip title="react-vscode-portoflio (Git)" arrow> */}
-            {/* <Link
-              href="https://github.com/noworneverev/react-vscode-portfolio"
-              underline="none"
-              color="white"
-              target="_blank"
-            > */}
             <Box
               component={Link}
               href="https://github.com/noworneverev/react-vscode-portfolio"
@@ -61,21 +62,21 @@ export default function Footer() {
                 px: 0.5,
                 justifyContent: "center",
                 alignItems: "center",
-                // cursor: "pointer",
                 "&:hover": {
                   background: "#1f8ad2",
                 },
               }}
             >
               <IoIosGitBranch fontSize="0.9rem" />
-              <Typography sx={{ ml: 0.5, mt: 0.1, fontSize: "0.6rem" }}>
+              <Typography
+                sx={{
+                  marginLeft: "2px",
+                  fontSize: theme.breakpoints.up("md") ? "0.7rem" : "0.6rem",
+                }}
+              >
                 main
               </Typography>
             </Box>
-            {/* </Link> */}
-
-            {/* </Tooltip> */}
-            {/* </Stack> */}
             <Stack
               direction="row"
               spacing={0.5}
@@ -105,7 +106,14 @@ export default function Footer() {
                   pt: 0.3,
                 }}
               >
-                <Typography sx={{ fontSize: "0.6rem" }}>0</Typography>
+                <Typography
+                  sx={{
+                    fontSize: theme.breakpoints.up("md") ? "0.7rem" : "0.6rem",
+                    marginLeft: "2px",
+                  }}
+                >
+                  0
+                </Typography>
               </Box>
 
               <Box
@@ -126,21 +134,26 @@ export default function Footer() {
                   pt: 0.3,
                 }}
               >
-                <Typography sx={{ fontSize: "0.6rem" }}>0</Typography>
+                <Typography
+                  sx={{
+                    fontSize: theme.breakpoints.up("md") ? "0.7rem" : "0.6rem",
+                    marginLeft: "2px",
+                  }}
+                >
+                  0
+                </Typography>
               </Box>
             </Stack>
           </Stack>
         </Grid>
         <Grid
           item
-          // sx={{ backgroundColor: '#3279CB', minWidth: `calc(100% - 35px)` }}
           sx={{ backgroundColor: "#3279CB", minWidth: `calc(100% - 235px)` }}
           display="flex"
           justifyContent="flex-end"
         >
           <Box display="flex" justifyContent="flex-end">
             <Stack
-              // display="flex"
               justifyContent="end"
               direction="row"
               spacing={0.8}
@@ -159,11 +172,15 @@ export default function Footer() {
                 }}
               >
                 <VscCheck fontSize="0.9rem" />
-                <Typography sx={{ ml: 0.5, mt: 0.1, fontSize: "0.6rem" }}>
+                <Typography
+                  sx={{
+                    fontSize: theme.breakpoints.up("md") ? "0.7rem" : "0.6rem",
+                    marginLeft: "3px",
+                  }}
+                >
                   Prettier
                 </Typography>
               </Box>
-
               <Box
                 display="flex"
                 sx={{
