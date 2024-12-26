@@ -63,6 +63,26 @@ function MarkdownLink(props: any) {
   );
 }
 
+function MarkdownImage(props: any) {
+  const theme = useTheme();
+  const isDarkMode = theme.palette.mode === "dark";
+
+  const isShieldsBadge = props.src.includes("shields.io");
+  const labelColor = isDarkMode ? "2f363d" : "f0f0f0";
+  const color = isDarkMode ? "58a6ff" : "0366d6";
+  const logoColor = isDarkMode ? "ffffff" : "333333";
+
+  const updatedSrc = isShieldsBadge
+    ? props.src
+        .replace("style=social", "style=flat")
+        .concat(
+          `&labelColor=${labelColor}&color=${color}&logo=github&logoColor=${logoColor}`
+        )
+    : props.src;
+
+  return <img src={updatedSrc} alt={props.alt} />;
+}
+
 function MarkdownTable(props: { children: ReactNode }) {
   return (
     <TableContainer component={Paper}>
@@ -284,7 +304,7 @@ export default function MDContainer({ path }: Props) {
           hr: MarkdownDivider,
           // br: MarkdownBr,
           // input: MarkdownCheckbox,
-          // img: MarkdownImage,
+          img: MarkdownImage,
           blockquote: MarkdownBlockquote,
         }}
         remarkPlugins={[remarkGfm, remarkBreaks]}
