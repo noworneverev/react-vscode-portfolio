@@ -5,6 +5,14 @@
 - Desktop App Development
 - Web Development (Frontend & Backend)
 
+## LLM and AI Skills
+- Large Language Models (LLMs)
+- Retrieval-Augmented Generation (RAG)
+- GraphRAG
+- Knowledge Graphs
+- Chatbot Development
+- Agentic RAG
+
 ## Programming languages
 - C# .NET
 - Python
@@ -28,5 +36,5 @@
 - Heroku
 - Render
 
-## Vcs
+## Version Control Systems (VCS)
 - Git
