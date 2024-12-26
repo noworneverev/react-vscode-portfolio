@@ -89,36 +89,30 @@ export default function App() {
   )?.index;
 
   useEffect(() => {
-    const newPages = [];
+    const newPages = visiblePageIndexs
+      .map((index) => pages.find((x) => x.index === index))
+      .filter((page): page is Page => page !== undefined);
 
-    for (const index of visiblePageIndexs) {
-      const page = pages.find((x) => x.index === index);
-      if (page) newPages.push(page);
-    }
     setVisiblePages(newPages);
 
     if (visiblePageIndexs.length === 0) {
+      // No visible pages, reset selection and navigate to the home page
       setSelectedIndex(-1);
       navigate("/");
-    } else if (
-      deletedIndex === selectedIndex &&
-      deletedIndex > Math.max(...visiblePageIndexs)
-    ) {
-      setSelectedIndex(Math.max(...visiblePageIndexs));
-      const page = pages.find(
-        (x) => x.index === Math.max(...visiblePageIndexs)
-      );
-      if (page) navigate(page.route);
-    } else if (
-      deletedIndex === selectedIndex &&
-      deletedIndex < Math.max(...visiblePageIndexs)
-    ) {
-      setSelectedIndex(Math.min(...visiblePageIndexs));
-      const page = pages.find(
-        (x) => x.index === Math.min(...visiblePageIndexs)
-      );
-      if (page) navigate(page.route);
-    } else {
+      return;
+    }
+
+    if (deletedIndex === selectedIndex) {
+      // Handle tab deletion and update the selected index
+      const newSelectedIndex =
+        deletedIndex > Math.max(...visiblePageIndexs)
+          ? Math.max(...visiblePageIndexs)
+          : Math.min(...visiblePageIndexs);
+
+      setSelectedIndex(newSelectedIndex);
+
+      const newPage = pages.find((x) => x.index === newSelectedIndex);
+      if (newPage) navigate(newPage.route);
     }
   }, [visiblePageIndexs, navigate, deletedIndex, selectedIndex]);
 
