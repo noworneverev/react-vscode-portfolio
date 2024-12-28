@@ -73,6 +73,14 @@ After earning my bachelor's degree, I enrolled in Taiwan's "Undergraduate Credit
 - Desktop App Development
 - Web Development (Frontend & Backend)
 
+### LLM and AI Skills
+- Large Language Models (LLMs)
+- Retrieval-Augmented Generation (RAG)
+- GraphRAG
+- Knowledge Graphs
+- Chatbot Development
+- Agentic RAG
+
 ### Programming languages
 - C# .NET
 - Python
