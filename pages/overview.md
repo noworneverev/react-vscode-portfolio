@@ -2,41 +2,33 @@
 
 ## Summary
 
-Senior Software Developer specializing in web application development. Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages including C# .NET, Python and JavaScript/TypeScript. Strong background in both accounting/auditing and software development. Mitigated the gap between end users and developers, co-designed and built scalable solutions.
-
+Senior Software Developer specializing in Artificial Intelligence and advanced data architectures. Expertise in Retrieval-Augmented Generation (RAG), GraphRAG, and Knowledge Graphs to create intelligent and scalable solutions. Skilled in fine-tuning Large Language Models (LLMs) for optimized, application-specific performance. Active contributor to the open-source community with over 600 GitHub stars, demonstrating a commitment to collaborative innovation. Adept at bridging the gap between end users and technical teams to design and implement cutting-edge web and software applications. Proficient in multiple programming languages, including Python, C# .NET, and JavaScript/TypeScript, with a proven track record of driving innovation and efficiency through technology.
 
 ## Experience
 
 **Research Engineer** @ [Fraunhofer Institute for Applied Information Technology FIT | Data Science and Artificial Intelligence](https://www.fit.fraunhofer.de/en/business-areas/data-science-and-artificial-intelligence.html) _(Jan 2024 - Present)_
 
-Focused on Retrieval-Augmented Generation (RAG) and Knowledge Graphs.
-- Detailed achievements:
-  - Developed the BAföG chatbot using RAG, optimizing it to provide more accurate and relevant responses, benefiting students applying for financial aid.
-  - Collaborated with Deloitte to develop a hybrid RAG(VectorRAG, GraphRAG) system, improving business decision-making.
-  - Automated administrative tasks through scripting, resulting in a 90% efficiency increase.
+Specializing in Retrieval-Augmented Generation (RAG) and Knowledge Graphs.
+- Developed AI-driven chatbots utilizing RAG to deliver accurate and contextually relevant responses.
+- Engineered hybrid RAG systems integrating VectorRAG and GraphRAG methodologies to enhance data-driven decision-making processes.
+- Streamlined administrative workflows by automating tasks with scripting, resulting in a 90% efficiency increase.
 - _**Technologies used:**_ Python, LangChain, LangGraph, LlamaIndex, Ollama, Neo4j, MLflow
-
-&nbsp;
 
 **Software Developer** @ [Ernst & Young](https://www.ey.com/) _(Nov 2018 - Nov 2021)_
 
 Completed full lifecycle application development to enterprise business applications including requirement analysis, system design, development, unit testing, implementation, testing support, performance tuning, maintenance, and post-production support.
-- Detailed achievements:
-  - Collaborated with colleagues from worldwide to implement the Disaster Recovery Project. Completed ahead of the original schedule and saved budget up to 30%.
-  - Optimized deployment process and reduced manual work to accelerate product deployment by over 70%.
-  - Delivered virtual and live classroom training for employees(the cumulative number of trainees exceeded 500).
-- _**Technologies used:**_ C#, MSSQL, Python, React.js
 
-&nbsp;
+- Collaborated with colleagues from worldwide to implement the Disaster Recovery Project. Completed ahead of the original schedule and saved budget up to 30%.
+- Optimized deployment process and reduced manual work to accelerate product deployment by over 70%.
+- Delivered virtual and live classroom training for employees(the cumulative number of trainees exceeded 500).
+- _**Technologies used:**_ C#, MSSQL, Python, React.js
 
 **Staff Auditor** @ [Deloitte & Touche](https://www2.deloitte.com/global/en.html) _(July 2017 - Nov 2018)_
 
 Planned and conducted operational and ﬁnancial audits to conﬁrm ﬁnancial statements are fairly presented in alignment with IFRS.
-- Detailed achievements:
-  - Delivered internal audit projects for major clients in the manufacturing industry with a focus on gap assessments/reviews of business processes and internal control.
-  - Supervised assigned auditing staffs to evaluate performance and maintain standards.
 
-&nbsp;
+- Delivered internal audit projects for major clients in the manufacturing industry with a focus on gap assessments/reviews of business processes and internal control.
+- Supervised assigned auditing staffs to evaluate performance and maintain standards.
 
 **Audit Intern** @ [KPMG](https://home.kpmg/) _(July 2015 - July 2015)_
 
@@ -80,6 +72,7 @@ After earning my bachelor's degree, I enrolled in Taiwan's "Undergraduate Credit
 - Knowledge Graphs
 - Chatbot Development
 - Agentic RAG
+- Fine-tuning LLMs
 
 ### Programming languages
 - C# .NET

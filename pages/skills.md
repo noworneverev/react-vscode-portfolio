@@ -12,6 +12,7 @@
 - Knowledge Graphs
 - Chatbot Development
 - Agentic RAG
+- Fine-tuning LLMs
 
 ## Programming languages
 - C# .NET
