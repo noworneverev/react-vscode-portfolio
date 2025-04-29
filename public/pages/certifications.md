@@ -1,2 +1,2 @@
-# 🥇 Certificates
+# 🥇 Certifications
 - Certified Public Accountant (Taiwan)
