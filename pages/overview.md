@@ -2,7 +2,7 @@
 
 ## Summary
 
-Senior Software Developer specializing in Artificial Intelligence and advanced data architectures. Expertise in Retrieval-Augmented Generation (RAG), GraphRAG, and Knowledge Graphs to create intelligent and scalable solutions. Skilled in fine-tuning Large Language Models (LLMs) for optimized, application-specific performance. Active contributor to the open-source community with over 600 GitHub stars, demonstrating a commitment to collaborative innovation. Adept at bridging the gap between end users and technical teams to design and implement cutting-edge web and software applications. Proficient in multiple programming languages, including Python, C# .NET, and JavaScript/TypeScript, with a proven track record of driving innovation and efficiency through technology.
+Senior Software Developer specializing in Artificial Intelligence and advanced data architectures. Expertise in Retrieval-Augmented Generation (RAG), GraphRAG, and Knowledge Graphs to create intelligent and scalable solutions. Skilled in fine-tuning Large Language Models (LLMs) for optimized, application-specific performance. Active contributor to the open-source community with 700+ GitHub stars, demonstrating a commitment to collaborative innovation. Adept at bridging the gap between end users and technical teams to design and implement cutting-edge web and software applications. Proficient in multiple programming languages, including Python, C# .NET, and JavaScript/TypeScript, with a proven track record of driving innovation and efficiency through technology.
 
 ## Experience
 
@@ -85,7 +85,7 @@ After earning my bachelor's degree, I enrolled in Taiwan's "Undergraduate Credit
 - Java
 - VB.NET/VBA
 
-## Certificates
+## Certifications
 - Certified Public Accountant (Taiwan)
 
 ## Featured Projects
@@ -99,9 +99,12 @@ After earning my bachelor's degree, I enrolled in Taiwan's "Undergraduate Credit
 - **Technologies**: React, TypeScript
 - **Demo**: [Live Demo](https://noworneverev.github.io/react-vscode-portfolio/)
 
-## Accomplishments
-**Won First Place** @ [EY Innovation Campaign](https://www.ey.com/) _(May 2021)_
-Built Trial Balance System, a system that streamlines data transmission across users, providing consistent, reliable financial reports to them. 
+## Rewards
+- **Deutschlandstipendium Scholarship** @ [RWTH Aachen University](https://www.mystipendium.de/stipendien/rwth-aachen-deutschlandstipendium) _(2023–2024)_
+  Awarded for outstanding academic performance and commitment, sponsored jointly by the German Federal Government and private partners.
+  
+- **Won First Place** @ [EY Asia Innovation Campaign](https://www.ey.com/) _(May 2021)_
+  Awarded for designing and building the Trial Balance System, which streamlined data transmission across users and ensured consistent, reliable financial reporting.
 
 ## Languages
 **English**: C1
